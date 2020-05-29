@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:teste/XDInicio.dart';
 import 'XDComponente91.dart';
 
 void main() {
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: XDComponente91(),
+      home: XDInicio(),
     );
   }
 }

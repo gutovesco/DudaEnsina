@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:teste/XDInicio.dart';
 
 class XDCorpo extends StatelessWidget {
   XDCorpo({
@@ -157,7 +158,13 @@ class XDCorpo extends StatelessWidget {
           child: SizedBox(
             width: 81.0,
             height: 28.0,
-            child: SingleChildScrollView(
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => XDInicio()),
+                );
+              },
                 child: Text(
               'Acessar',
               style: TextStyle(
