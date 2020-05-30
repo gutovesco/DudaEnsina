@@ -1,11 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:teste/Chat2.dart';
-import 'package:teste/Chat3.dart';
-import 'package:teste/Chat4.dart';
-import 'package:teste/Chat5.dart';
-import 'package:teste/Home2.dart';
-import 'package:teste/XDInicio.dart';
-import 'XDComponente91.dart';
+import 'package:teste/Chat.dart';
 
 void main() {
   runApp(MyApp());
@@ -33,7 +27,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Chat5(),
+      home: Chat(),
     );
   }
 }
