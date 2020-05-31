@@ -1,6 +1,8 @@
+
 import 'package:flutter/material.dart';
-import 'package:teste/XDCorpo.dart';
-import 'package:teste/XDtitle.dart';
+
+import 'XDCorpo.dart';
+import 'XDtitle.dart';
 
 class XDComponente91 extends StatelessWidget {
   XDComponente91({

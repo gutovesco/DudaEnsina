@@ -1,538 +1,437 @@
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class XDInicio extends StatelessWidget {
-  XDInicio({
+import 'InitialChat.dart';
+import 'MundoBMG.dart';
+
+class HomeScreen extends StatelessWidget {
+  HomeScreen({
     Key key,
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xfff2f2f2),
-      body: Stack(
-        children: <Widget>[
-          SizedBox(height: 20),
-          Transform.translate(
-            offset: Offset(0, -357.0),
-            child: Container(
-              width: 600.0,
-              height: 678.0,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.elliptical(459.5, 80.0)),
-                gradient: LinearGradient(
-                  begin: Alignment(0.0, -1.0),
-                  end: Alignment(0.0, 1.0),
-                  colors: [
-                    const Color(0xfff3781f),
-                    const Color(0xfff6ae79),
-                    const Color(0xfff18437),
-                    const Color(0xfffe994f),
-                    const Color(0xfff1771f),
-                    const Color(0xff7a3c10)
-                  ],
-                  stops: [0.0, 0.247, 0.854, 1.0, 1.0, 1.0],
+      body: SafeArea(
+              child: Stack(
+          children: <Widget>[
+            Transform.translate(
+              offset: Offset(0.0, -357.0),
+              child: Container(
+                width: 919.0,
+                height: 678.0,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.elliptical(459.5, 99.0)),
+                  gradient: LinearGradient(
+                    begin: Alignment(0.0, -1.0),
+                    end: Alignment(0.0, 1.0),
+                    colors: [
+                      const Color(0xfff3781f),
+                      const Color(0xfff6ae79),
+                      const Color(0xfff18437),
+                      const Color(0xfffe994f),
+                      const Color(0xfff1771f),
+                      const Color(0xff7a3c10)
+                    ],
+                    stops: [0.0, 0.247, 0.854, 1.0, 1.0, 1.0],
+                  ),
                 ),
               ),
             ),
-          ),
-          Transform.translate(
-            offset: Offset(26.0, 22.0),
-            child:
-                // Adobe XD layer: 'Icon material-perso…' (shape)
-                SvgPicture.string(
-              _svg_axgb1n,
-              allowDrawingOutsideViewBox: true,
+            Transform.translate(
+              offset: Offset(26.0, 22.0),
+              child:
+                  // Adobe XD layer: 'Icon material-perso…' (shape)
+                  SvgPicture.string(
+                _svg_axgb1n,
+                allowDrawingOutsideViewBox: true,
+              ),
             ),
-          ),
-          Transform.translate(
-            offset: Offset(67.5, 13.5),
-            child: SizedBox(
-              width: 86.0,
-              height: 51.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                'João',
-                style: TextStyle(
-                  fontFamily: 'Century Gothic',
-                  fontSize: 14,
-                  color: const Color(0xffffffff),
-                ),
-                textAlign: TextAlign.left,
-              )),
+            Transform.translate(
+              offset: Offset(67.5, 13.5),
+              child: SizedBox(
+                width: 86.0,
+                height: 21.0,
+                child: SingleChildScrollView(
+                    child: Text(
+                  'João',
+                  style: TextStyle(
+                    fontFamily: 'Century Gothic',
+                    fontSize: 14,
+                    color: const Color(0xffffffff),
+                  ),
+                  textAlign: TextAlign.left,
+                )),
+              ),
             ),
-          ),
-          Transform.translate(
-            offset: Offset(67.5, 38.5),
-            child: SizedBox(
-              width: 171.0,
-              height: 17.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                'ag 0065 c/c 12345-67',
-                style: TextStyle(
-                  fontFamily: 'Century Gothic',
-                  fontSize: 14,
-                  color: const Color(0xffffffff),
-                ),
-                textAlign: TextAlign.left,
-              )),
+            Transform.translate(
+              offset: Offset(67.5, 38.5),
+              child: SizedBox(
+                width: 171.0,
+                height: 17.0,
+                child: SingleChildScrollView(
+                    child: Text(
+                  'ag 0065 c/c 12345-67',
+                  style: TextStyle(
+                    fontFamily: 'Century Gothic',
+                    fontSize: 14,
+                    color: const Color(0xffffffff),
+                  ),
+                  textAlign: TextAlign.left,
+                )),
+              ),
             ),
-          ),
-          Transform.translate(
-            offset: Offset(324.98, 18.0),
-            child:
-                // Adobe XD layer: 'Icon feather-rotate…' (group)
-                Stack(
+            Transform.translate(
+              offset: Offset(324.98, 18.0),
+              child:
+                  // Adobe XD layer: 'Icon feather-rotate…' (group)
+                  Stack(
+                children: <Widget>[
+                  IconButton(icon: Icon(Icons.dashboard),
+                  color: Colors.white,
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => MundoBMG()),
+                    );
+                  },
+                  )
+                ],
+              ),
+            ),
+            Transform.translate(
+              offset: Offset(68.0, 110.0),
+              child: SvgPicture.string(
+                _svg_2fbuvh,
+                allowDrawingOutsideViewBox: true,
+              ),
+            ),
+            Transform.translate(
+              offset: Offset(199.5, 130.5),
+              child: SizedBox(
+                width: 79.0,
+                height: 32.0,
+                child: SingleChildScrollView(
+                    child: Text(
+                  'BMG',
+                  style: TextStyle(
+                    fontFamily: 'Cooper',
+                    fontSize: 20,
+                    color: const Color(0xff666666),
+                    fontWeight: FontWeight.w900,
+                  ),
+                  textAlign: TextAlign.left,
+                )),
+              ),
+            ),
+            Transform.translate(
+              offset: Offset(248.5, 126.0),
+              child: SizedBox(
+                width: 61.0,
+                height: 27.0,
+                child: SingleChildScrollView(
+                    child: Text(
+                  'CARD',
+                  style: TextStyle(
+                    fontFamily: 'Gadugi',
+                    fontSize: 20,
+                    color: const Color(0xff666666),
+                  ),
+                  textAlign: TextAlign.left,
+                )),
+              ),
+            ),
+            Transform.translate(
+              offset: Offset(98.5, 166.5),
+              child: SizedBox(
+                width: 220.0,
+                height: 31.0,
+                child: SingleChildScrollView(
+                    child: Text(
+                  '5135 9739 3124 9893',
+                  style: TextStyle(
+                    fontFamily: 'Gadugi',
+                    fontSize: 20,
+                    color: const Color(0xffffffff),
+                  ),
+                  textAlign: TextAlign.left,
+                )),
+              ),
+            ),
+            Transform.translate(
+              offset: Offset(98.5, 216.5),
+              child: SizedBox(
+                width: 100.0,
+                height: 23.0,
+                child: SingleChildScrollView(
+                    child: Text(
+                  'João M Silva',
+                  style: TextStyle(
+                    fontFamily: 'Century Gothic',
+                    fontSize: 14,
+                    color: const Color(0xffffffff),
+                  ),
+                  textAlign: TextAlign.left,
+                )),
+              ),
+            ),
+            Transform.translate(
+              offset: Offset(313.04, 228.55),
+              child: SvgPicture.string(
+                _svg_s3lwu9,
+                allowDrawingOutsideViewBox: true,
+              ),
+            ),
+            Stack(
               children: <Widget>[
                 Transform.translate(
-                  offset: Offset(4.5, 4.5),
+                  offset: Offset(236.3, 207.97),
                   child: SvgPicture.string(
-                    _svg_bqib9k,
+                    _svg_6n9y6w,
                     allowDrawingOutsideViewBox: true,
                   ),
                 ),
               ],
             ),
-          ),
-          Transform.translate(
-            offset: Offset(68.0, 110.0),
-            child: SvgPicture.string(
-              _svg_2fbuvh,
-              allowDrawingOutsideViewBox: true,
+            Transform.translate(
+              offset: Offset(137.0, 332.0),
+              child: SizedBox(
+                width: 143.0,
+                height: 21.0,
+                child: SingleChildScrollView(
+                    child: Text(
+                  'Limite Disponível:',
+                  style: TextStyle(
+                    fontFamily: 'Century Gothic',
+                    fontSize: 13,
+                    color: const Color(0xff000000),
+                  ),
+                  textAlign: TextAlign.left,
+                )),
+              ),
             ),
-          ),
-          Transform.translate(
-            offset: Offset(199.5, 130.5),
-            child: SizedBox(
-              width: 79.0,
-              height: 32.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                'BMG',
-                style: TextStyle(
-                  fontFamily: 'Cooper',
-                  fontSize: 20,
-                  color: const Color(0xff666666),
-                  fontWeight: FontWeight.w900,
-                ),
-                textAlign: TextAlign.left,
-              )),
+            Transform.translate(
+              offset: Offset(99.0, 357.0),
+              child: SizedBox(
+                width: 177.0,
+                height: 38.0,
+                child: SingleChildScrollView(
+                    child: Text(
+                  'R\$ 499, 90',
+                  style: TextStyle(
+                    fontFamily: 'Century Gothic',
+                    fontSize: 27,
+                    color: const Color(0xff000000),
+                  ),
+                  textAlign: TextAlign.center,
+                )),
+              ),
             ),
-          ),
-          Transform.translate(
-            offset: Offset(248.5, 126.0),
-            child: SizedBox(
-              width: 61.0,
-              height: 27.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                'CARD',
-                style: TextStyle(
-                  fontFamily: 'Gadugi',
-                  fontSize: 20,
-                  color: const Color(0xff666666),
-                ),
-                textAlign: TextAlign.left,
-              )),
+            Transform.translate(
+              offset: Offset(68.5, 443.5),
+              child: SvgPicture.string(
+                _svg_5mthib,
+                allowDrawingOutsideViewBox: true,
+              ),
             ),
-          ),
-          Transform.translate(
-            offset: Offset(98.5, 166.5),
-            child: SizedBox(
-              width: 220.0,
-              height: 31.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                '5135 9739 3124 9893',
-                style: TextStyle(
-                  fontFamily: 'Gadugi',
-                  fontSize: 20,
+            Transform.translate(
+              offset: Offset(227.0, 422.0),
+              child: SizedBox(
+                width: 83.0,
+                height: 17.0,
+                child: SingleChildScrollView(
+                    child: Text(
+                  'Limite Total',
+                  style: TextStyle(
+                    fontFamily: 'Century Gothic',
+                    fontSize: 12,
+                    color: const Color(0xff938d8d),
+                  ),
+                  textAlign: TextAlign.left,
+                )),
+              ),
+            ),
+            Transform.translate(
+              offset: Offset(234.0, 449.0),
+              child: SizedBox(
+                width: 83.0,
+                height: 17.0,
+                child: SingleChildScrollView(
+                    child: Text(
+                  'R\$ 789,98',
+                  style: TextStyle(
+                    fontFamily: 'Century Gothic',
+                    fontSize: 12,
+                    color: const Color(0xff938d8d),
+                  ),
+                  textAlign: TextAlign.left,
+                )),
+              ),
+            ),
+            Transform.translate(
+              offset: Offset(54.0, 498.0),
+              child: Container(
+                width: 123.0,
+                height: 36.0,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(26.0),
                   color: const Color(0xffffffff),
+                  border: Border.all(width: 1.0, color: const Color(0xfff4893d)),
                 ),
-                textAlign: TextAlign.left,
-              )),
+              ),
             ),
-          ),
-          Transform.translate(
-            offset: Offset(98.5, 216.5),
-            child: SizedBox(
-              width: 100.0,
-              height: 23.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                'João M Silva',
-                style: TextStyle(
-                  fontFamily: 'Century Gothic',
-                  fontSize: 14,
+            Transform.translate(
+              offset: Offset(65.5, 504.5),
+              child: SizedBox(
+                width: 100.0,
+                height: 23.0,
+                child: SingleChildScrollView(
+                    child: Text(
+                  'Faturas',
+                  style: TextStyle(
+                    fontFamily: 'Century Gothic',
+                    fontSize: 14,
+                    color: const Color(0xfff58a3e),
+                  ),
+                  textAlign: TextAlign.center,
+                )),
+              ),
+            ),
+            Transform.translate(
+              offset: Offset(203.0, 498.0),
+              child: Container(
+                width: 123.0,
+                height: 36.0,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(26.0),
+                  gradient: LinearGradient(
+                    begin: Alignment(0.81, 0.0),
+                    end: Alignment(-0.88, 0.0),
+                    colors: [const Color(0xffff6a01), const Color(0xffffb47f)],
+                    stops: [0.0, 1.0],
+                  ),
+                  border: Border.all(width: 1.0, color: const Color(0xfff4893d)),
+                ),
+              ),
+            ),
+            Transform.translate(
+              offset: Offset(214.5, 505.5),
+              child: SizedBox(
+                width: 100.0,
+                height: 23.0,
+                child: SingleChildScrollView(
+                    child: Text(
+                  'Pagar',
+                  style: TextStyle(
+                    fontFamily: 'Century Gothic',
+                    fontSize: 14,
+                    color: const Color(0xffffffff),
+                  ),
+                  textAlign: TextAlign.center,
+                )),
+              ),
+            ),
+            Transform.translate(
+              offset: Offset(49.0, 561.0),
+              child: Container(
+                width: 272.0,
+                height: 36.0,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(26.0),
                   color: const Color(0xffffffff),
-                ),
-                textAlign: TextAlign.left,
-              )),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(313.04, 228.55),
-            child: SvgPicture.string(
-              _svg_s3lwu9,
-              allowDrawingOutsideViewBox: true,
-            ),
-          ),
-          Stack(
-            children: <Widget>[
-              Transform.translate(
-                offset: Offset(236.3, 207.97),
-                child: SvgPicture.string(
-                  _svg_6n9y6w,
-                  allowDrawingOutsideViewBox: true,
+                  border: Border.all(width: 1.0, color: const Color(0xfff4893d)),
                 ),
               ),
-            ],
-          ),
-          Transform.translate(
-            offset: Offset(137.0, 350.0),
-            child: SizedBox(
-              width: 143.0,
-              height: 21.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                'Limite Disponível:',
-                style: TextStyle(
-                  fontFamily: 'Century Gothic',
-                  fontSize: 13,
-                  color: const Color(0xff000000),
-                ),
-                textAlign: TextAlign.left,
-              )),
             ),
-          ),
-          Transform.translate(
-            offset: Offset(99.0, 375.0),
-            child: SizedBox(
-              width: 177.0,
-              height: 38.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                'R\$ 499, 90',
-                style: TextStyle(
-                  fontFamily: 'Century Gothic',
-                  fontSize: 27,
-                  color: const Color(0xff000000),
-                ),
-                textAlign: TextAlign.center,
-              )),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(68.5, 461.5),
-            child: SvgPicture.string(
-              _svg_gmp31d,
-              allowDrawingOutsideViewBox: true,
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(227.0, 440.0),
-            child: SizedBox(
-              width: 83.0,
-              height: 17.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                'Limite Total',
-                style: TextStyle(
-                  fontFamily: 'Century Gothic',
-                  fontSize: 12,
-                  color: const Color(0xff938d8d),
-                ),
-                textAlign: TextAlign.left,
-              )),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(234.0, 467.0),
-            child: SizedBox(
-              width: 83.0,
-              height: 17.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                'R\$ 789,98',
-                style: TextStyle(
-                  fontFamily: 'Century Gothic',
-                  fontSize: 12,
-                  color: const Color(0xff938d8d),
-                ),
-                textAlign: TextAlign.left,
-              )),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(54.0, 516.0),
-            child: Container(
-              width: 123.0,
-              height: 36.0,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(26.0),
-                color: const Color(0xffffffff),
-                border: Border.all(width: 1.0, color: const Color(0xfff4893d)),
+            Transform.translate(
+              offset: Offset(140.5, 567.5),
+              child: SizedBox(
+                width: 100.0,
+                height: 23.0,
+                child: SingleChildScrollView(
+                    child: Text(
+                  'Saque',
+                  style: TextStyle(
+                    fontFamily: 'Century Gothic',
+                    fontSize: 14,
+                    color: const Color(0xfff58a3e),
+                  ),
+                  textAlign: TextAlign.center,
+                )),
               ),
             ),
-          ),
-          Transform.translate(
-            offset: Offset(65.5, 522.5),
-            child: SizedBox(
-              width: 100.0,
-              height: 23.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                'Faturas',
-                style: TextStyle(
-                  fontFamily: 'Century Gothic',
-                  fontSize: 14,
-                  color: const Color(0xfff58a3e),
-                ),
-                textAlign: TextAlign.center,
-              )),
+            Transform.translate(
+              offset: Offset(63.0, 635.88),
+              child:
+                  // Adobe XD layer: 'Bullet' (group)
+                  GestureDetector(
+                    onTap: (){
+                      Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => InitialChat()),
+                    );
+                    },
+                                    child: Stack(
+                children: <Widget>[
+                    Transform.translate(
+                      offset: Offset(0.0, 0.12),
+                      child:
+                          // Adobe XD layer: 'Bullet' (shape)
+                          SvgPicture.string(
+                        _svg_vdjnj5,
+                        allowDrawingOutsideViewBox: true,
+                      ),
+                    ),
+                    Transform.translate(
+                      offset: Offset(25.0, 8.12),
+                      child:
+                          // Adobe XD layer: 'Hmm ... Tuesday nigh' (text)
+                          SizedBox(
+                        width: 211.0,
+                        height: 82.0,
+                        child: SingleChildScrollView(
+                            child: Text(
+                          'Olá joão, reparei que você quase atingiu o limite total, que tal algumas dicas sobre como poupar seu dinheiro?',
+                          style: TextStyle(
+                            fontFamily: 'Fira Sans',
+                            fontSize: 14,
+                            color: const Color(0xffffffff),
+                            height: 1.2857142857142858,
+                          ),
+                          textAlign: TextAlign.left,
+                        )),
+                      ),
+                    ),
+                ],
+              ),
+                  ),
             ),
-          ),
-          Transform.translate(
-            offset: Offset(203.0, 516.0),
-            child: Container(
-              width: 123.0,
-              height: 36.0,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(26.0),
-                gradient: LinearGradient(
-                  begin: Alignment(0.81, 0.0),
-                  end: Alignment(-0.88, 0.0),
-                  colors: [const Color(0xffff6a01), const Color(0xffffb47f)],
-                  stops: [0.0, 1.0],
-                ),
-                border: Border.all(width: 1.0, color: const Color(0xfff4893d)),
+            Transform.translate(
+              offset: Offset(17.54, 673.46),
+              child: SvgPicture.string(
+                _svg_xs7dte,
+                allowDrawingOutsideViewBox: true,
               ),
             ),
-          ),
-          Transform.translate(
-            offset: Offset(214.5, 523.5),
-            child: SizedBox(
-              width: 100.0,
-              height: 23.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                'Pagar',
-                style: TextStyle(
-                  fontFamily: 'Century Gothic',
-                  fontSize: 14,
-                  color: const Color(0xffffffff),
-                ),
-                textAlign: TextAlign.center,
-              )),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(49.0, 579.0),
-            child: Container(
-              width: 272.0,
-              height: 36.0,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(26.0),
-                color: const Color(0xffffffff),
-                border: Border.all(width: 1.0, color: const Color(0xfff4893d)),
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(140.5, 585.5),
-            child: SizedBox(
-              width: 100.0,
-              height: 23.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                'Saque',
-                style: TextStyle(
-                  fontFamily: 'Century Gothic',
-                  fontSize: 14,
-                  color: const Color(0xfff58a3e),
-                ),
-                textAlign: TextAlign.center,
-              )),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(-4.0, 766.0),
-            child: Container(
-              width: 415.0,
-              height: 46.0,
-              decoration: BoxDecoration(
-                color: const Color(0xffffffff),
-              ),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(28.0, 663.0),
-            child: SizedBox(
-              width: 171.0,
-              height: 30.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                'Melhor data de compra:',
-                style: TextStyle(
-                  fontFamily: 'Century Gothic',
-                  fontSize: 13,
-                  color: const Color(0xff000000),
-                ),
-                textAlign: TextAlign.left,
-              )),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(72.0, 685.0),
-            child: SizedBox(
-              width: 103.0,
-              height: 30.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                '22/06/2020',
-                style: TextStyle(
-                  fontFamily: 'Century Gothic',
-                  fontSize: 13,
-                  color: const Color(0xff000000),
-                ),
-                textAlign: TextAlign.left,
-              )),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(195.0, 663.0),
-            child: SizedBox(
-              width: 171.0,
-              height: 30.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                'Vencimento todo dia',
-                style: TextStyle(
-                  fontFamily: 'Century Gothic',
-                  fontSize: 13,
-                  color: const Color(0xff000000),
-                ),
-                textAlign: TextAlign.left,
-              )),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(252.0, 685.0),
-            child: SizedBox(
-              width: 26.0,
-              height: 30.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                '10',
-                style: TextStyle(
-                  fontFamily: 'Century Gothic',
-                  fontSize: 13,
-                  color: const Color(0xff000000),
-                ),
-                textAlign: TextAlign.left,
-              )),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(62.0, 767.0),
-            child:
-                // Adobe XD layer: 'Icon feather-credit…' (group)
-                Stack(
-              children: <Widget>[
-                Transform.translate(
-                  offset: Offset(1.5, 6.0),
-                  child: SvgPicture.string(
-                    _svg_9tn4e9,
-                    allowDrawingOutsideViewBox: true,
+            Transform.translate(
+              offset: Offset(27.0, 685.0),
+              child:
+                  // Adobe XD layer: 'Photo' (shape)
+                  Container(
+                width: 43.0,
+                height: 42.0,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(22.5),
+                  image: DecorationImage(
+                    image: const AssetImage('assets/images/duda.png'),
+                    fit: BoxFit.cover,
                   ),
                 ),
-              ],
+              ),
             ),
-          ),
-          Transform.translate(
-            offset: Offset(54.0, 792.0),
-            child: SizedBox(
-              width: 54.0,
-              height: 13.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                'Cartões',
-                style: TextStyle(
-                  fontFamily: 'Century Gothic',
-                  fontSize: 11,
-                  color: const Color(0xffa6b1a1),
-                ),
-                textAlign: TextAlign.left,
-              )),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(165.0, 767.0),
-            child:
-                // Adobe XD layer: 'Icon feather-credit…' (group)
-                Stack(
-              children: <Widget>[
-                Transform.translate(
-                  offset: Offset(1.5, 6.0),
-                  child: SvgPicture.string(
-                    _svg_9tn4e9,
-                    allowDrawingOutsideViewBox: true,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(157.0, 792.0),
-            child: SizedBox(
-              width: 54.0,
-              height: 13.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                'Cartões',
-                style: TextStyle(
-                  fontFamily: 'Century Gothic',
-                  fontSize: 11,
-                  color: const Color(0xffa6b1a1),
-                ),
-                textAlign: TextAlign.left,
-              )),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(273.0, 767.0),
-            child:
-                // Adobe XD layer: 'Icon feather-credit…' (group)
-                Stack(
-              children: <Widget>[
-                Transform.translate(
-                  offset: Offset(1.5, 6.0),
-                  child: SvgPicture.string(
-                    _svg_9tn4e9,
-                    allowDrawingOutsideViewBox: true,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(265.0, 792.0),
-            child: SizedBox(
-              width: 54.0,
-              height: 13.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                'Cartões',
-                style: TextStyle(
-                  fontFamily: 'Century Gothic',
-                  fontSize: 11,
-                  color: const Color(0xffa6b1a1),
-                ),
-                textAlign: TextAlign.left,
-              )),
-            ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
@@ -548,7 +447,9 @@ const String _svg_6n9y6w =
     '<svg viewBox="236.3 208.0 77.9 41.6" ><path transform="translate(132.74, -1077.45)" d="M 180.6172637939453 1326.137451171875 L 180.6172637939453 1326.3037109375 L 180.7720489501953 1326.3037109375 C 180.8011016845703 1326.303955078125 180.8297729492188 1326.296875 180.8550415039063 1326.282470703125 C 180.8755340576172 1326.267822265625 180.8872680664063 1326.243896484375 180.8861694335938 1326.218994140625 C 180.8872375488281 1326.1943359375 180.8754577636719 1326.170654296875 180.8550415039063 1326.156982421875 C 180.8300628662109 1326.14208984375 180.8011932373047 1326.134521484375 180.7720489501953 1326.135986328125 L 180.6172637939453 1326.135986328125 Z M 180.7737121582031 1326.020263671875 C 180.8400573730469 1326.01611328125 180.90576171875 1326.03515625 180.9596252441406 1326.073974609375 C 181.0034027099609 1326.10986328125 181.0275573730469 1326.16455078125 181.0247344970703 1326.220947265625 C 181.0267333984375 1326.26953125 181.0076751708984 1326.316650390625 180.9724578857422 1326.35009765625 C 180.9309387207031 1326.38623046875 180.8788299560547 1326.407958984375 180.8239135742188 1326.411865234375 L 181.0314025878906 1326.6484375 L 180.8716278076172 1326.6484375 L 180.6807861328125 1326.41357421875 L 180.6189270019531 1326.41357421875 L 180.6189270019531 1326.6484375 L 180.4853210449219 1326.6484375 L 180.4853210449219 1326.020751953125 L 180.7758026123047 1326.020751953125 Z M 180.7322387695313 1326.864990234375 C 180.8023071289063 1326.865478515625 180.8717346191406 1326.851318359375 180.9359588623047 1326.823486328125 C 180.9979095458984 1326.796630859375 181.0542297363281 1326.758544921875 181.1019287109375 1326.711181640625 C 181.1497497558594 1326.663330078125 181.1879272460938 1326.607177734375 181.2143707275391 1326.544921875 C 181.2688293457031 1326.41357421875 181.2688293457031 1326.265869140625 181.2143707275391 1326.13427734375 C 181.1875457763672 1326.072509765625 181.1493988037109 1326.01611328125 181.1019287109375 1325.96826171875 C 181.05419921875 1325.920654296875 180.9978942871094 1325.882568359375 180.9359588623047 1325.855712890625 C 180.871337890625 1325.829345703125 180.8020629882813 1325.816162109375 180.7322387695313 1325.81689453125 C 180.6611938476563 1325.816162109375 180.5906982421875 1325.82958984375 180.5247650146484 1325.855712890625 C 180.46142578125 1325.8818359375 180.4037780761719 1325.920166015625 180.3550415039063 1325.96826171875 C 180.2049407958984 1326.1220703125 180.1613464355469 1326.350830078125 180.2442169189453 1326.549072265625 C 180.2695007324219 1326.611572265625 180.3072052001953 1326.66796875 180.3550415039063 1326.71533203125 C 180.4038238525391 1326.76318359375 180.4614715576172 1326.801513671875 180.5247497558594 1326.82763671875 C 180.5902862548828 1326.855712890625 180.6609344482422 1326.86962890625 180.7322387695313 1326.869140625 M 180.7322387695313 1325.665771484375 C 180.9145812988281 1325.66552734375 181.0897064208984 1325.737060546875 181.2198028564453 1325.864990234375 C 181.2824859619141 1325.92626953125 181.3324127197266 1325.99951171875 181.3666687011719 1326.080322265625 C 181.4383392333984 1326.247802734375 181.4383392333984 1326.4375 181.3666687011719 1326.605224609375 C 181.3316192626953 1326.685546875 181.2817993164063 1326.758544921875 181.2197723388672 1326.820556640625 C 181.1561126708984 1326.881591796875 181.0820617675781 1326.930908203125 181.0010986328125 1326.9658203125 C 180.9160919189453 1327.001953125 180.8246002197266 1327.020263671875 180.7322387695313 1327.019775390625 C 180.6387786865234 1327.0205078125 180.546142578125 1327.002197265625 180.4600067138672 1326.9658203125 C 180.3781280517578 1326.931640625 180.3033752441406 1326.882568359375 180.2396697998047 1326.820556640625 C 180.1776733398438 1326.75634765625 180.1285247802734 1326.680908203125 180.0948486328125 1326.59814453125 C 180.023193359375 1326.4306640625 180.023193359375 1326.24072265625 180.0948486328125 1326.0732421875 C 180.1291198730469 1325.992431640625 180.1790313720703 1325.91943359375 180.2417449951172 1325.85791015625 C 180.3045959472656 1325.794921875 180.3795623779297 1325.74560546875 180.4621124267578 1325.712646484375 C 180.5482330322266 1325.676513671875 180.6408386230469 1325.658203125 180.7342987060547 1325.65869140625 M 117.1952209472656 1323.2412109375 C 117.1952209472656 1322.044189453125 117.9794769287109 1321.060791015625 119.2612609863281 1321.060791015625 C 120.4861755371094 1321.060791015625 121.3127746582031 1322.001708984375 121.3127746582031 1323.2412109375 C 121.3127746582031 1324.480712890625 120.4861755371094 1325.421630859375 119.2612609863281 1325.421630859375 C 117.9794769287109 1325.421630859375 117.1952209472656 1324.4384765625 117.1952209472656 1323.2412109375 M 122.7090911865234 1323.2412109375 L 122.7090911865234 1319.83447265625 L 121.2281036376953 1319.83447265625 L 121.2281036376953 1320.664306640625 C 120.7584075927734 1320.051025390625 120.0459289550781 1319.66650390625 119.0770263671875 1319.66650390625 C 117.1682434082031 1319.66650390625 115.6702880859375 1321.163818359375 115.6702880859375 1323.242919921875 C 115.6702880859375 1325.322265625 117.1674194335938 1326.8193359375 119.0770263671875 1326.8193359375 C 120.0455169677734 1326.8193359375 120.7584075927734 1326.434326171875 121.2281036376953 1325.8212890625 L 121.2281036376953 1326.6484375 L 122.7074279785156 1326.6484375 L 122.7074279785156 1323.2412109375 Z M 172.7486114501953 1323.2412109375 C 172.7486114501953 1322.044189453125 173.5328521728516 1321.060791015625 174.8150634765625 1321.060791015625 C 176.0412445068359 1321.060791015625 176.8665466308594 1322.001708984375 176.8665466308594 1323.2412109375 C 176.8665466308594 1324.480712890625 176.0412445068359 1325.421630859375 174.8150634765625 1325.421630859375 C 173.5332794189453 1325.421630859375 172.7486114501953 1324.4384765625 172.7486114501953 1323.2412109375 M 178.2640991210938 1323.2412109375 L 178.2640991210938 1317.10009765625 L 176.7819366455078 1317.10009765625 L 176.7819366455078 1320.664306640625 C 176.3121795654297 1320.051025390625 175.5997161865234 1319.66650390625 174.6308288574219 1319.66650390625 C 172.7220611572266 1319.66650390625 171.2240905761719 1321.163818359375 171.2240905761719 1323.242919921875 C 171.2240905761719 1325.322265625 172.7212371826172 1326.8193359375 174.6308288574219 1326.8193359375 C 175.5997161865234 1326.8193359375 176.3121795654297 1326.434326171875 176.7819366455078 1325.8212890625 L 176.7819366455078 1326.6484375 L 178.2640991210938 1326.6484375 L 178.2640991210938 1323.2412109375 Z M 141.0896453857422 1320.99072265625 C 142.0440368652344 1320.99072265625 142.6569061279297 1321.5888671875 142.8133544921875 1322.642578125 L 139.2796478271484 1322.642578125 C 139.4377593994141 1321.658935546875 140.0348510742188 1320.99072265625 141.0900573730469 1320.99072265625 M 141.1195220947266 1319.66259765625 C 139.1236114501953 1319.66259765625 137.7273101806641 1321.114990234375 137.7273101806641 1323.239013671875 C 137.7273101806641 1325.40478515625 139.1796569824219 1326.815673828125 141.2186889648438 1326.815673828125 C 142.2444610595703 1326.815673828125 143.1838989257813 1326.559814453125 144.0104675292969 1325.861328125 L 143.2847290039063 1324.763671875 C 142.7137603759766 1325.219970703125 141.9867553710938 1325.47607421875 141.3033447265625 1325.47607421875 C 140.3489532470703 1325.47607421875 139.4800872802734 1325.0341796875 139.266357421875 1323.80810546875 L 144.3233489990234 1323.80810546875 C 144.3378753662109 1323.623779296875 144.3528289794922 1323.43798828125 144.3528289794922 1323.238525390625 C 144.3378753662109 1321.115234375 143.0249786376953 1319.662353515625 141.1186981201172 1319.662353515625 M 158.9988555908203 1323.238525390625 C 158.9988555908203 1322.04150390625 159.7830963134766 1321.05810546875 161.0648803710938 1321.05810546875 C 162.2898254394531 1321.05810546875 163.1164093017578 1321.999267578125 163.1164093017578 1323.238525390625 C 163.1164093017578 1324.478271484375 162.2898254394531 1325.419189453125 161.0648803710938 1325.419189453125 C 159.7830963134766 1325.419189453125 158.9984283447266 1324.435791015625 158.9984283447266 1323.238525390625 M 164.5122680664063 1323.238525390625 L 164.5122680664063 1319.83447265625 L 163.0321502685547 1319.83447265625 L 163.0321502685547 1320.664306640625 C 162.5607757568359 1320.051025390625 161.8499603271484 1319.66650390625 160.8810729980469 1319.66650390625 C 158.9722900390625 1319.66650390625 157.4743194580078 1321.163818359375 157.4743194580078 1323.242919921875 C 157.4743194580078 1325.322265625 158.9714508056641 1326.8193359375 160.8810729980469 1326.8193359375 C 161.8499603271484 1326.8193359375 162.5607757568359 1326.434326171875 163.0321502685547 1325.8212890625 L 163.0321502685547 1326.6484375 L 164.5126800537109 1326.6484375 L 164.5126800537109 1323.2412109375 Z M 150.6355438232422 1323.238525390625 C 150.6355438232422 1325.3046875 152.0737762451172 1326.815185546875 154.2688293457031 1326.815185546875 C 155.2945861816406 1326.815185546875 155.9779968261719 1326.587158203125 156.7170562744141 1326.003173828125 L 156.0058135986328 1324.80615234375 C 155.4497680664063 1325.20556640625 154.8659362792969 1325.419189453125 154.2215423583984 1325.419189453125 C 153.0393524169922 1325.40478515625 152.1700439453125 1324.550048828125 152.1700439453125 1323.238525390625 C 152.1700439453125 1321.927490234375 153.0393524169922 1321.0732421875 154.2215423583984 1321.05810546875 C 154.8643035888672 1321.05810546875 155.4481048583984 1321.27197265625 156.0058135986328 1321.67138671875 L 156.7170562744141 1320.474365234375 C 155.9767608642578 1319.890380859375 155.2933502197266 1319.662353515625 154.2688293457031 1319.662353515625 C 152.0737457275391 1319.662353515625 150.6355438232422 1321.17236328125 150.6355438232422 1323.238525390625 M 169.7273559570313 1319.662353515625 C 168.8729705810547 1319.662353515625 168.3165130615234 1320.061767578125 167.9318695068359 1320.66015625 L 167.9318695068359 1319.83447265625 L 166.4641723632813 1319.83447265625 L 166.4641723632813 1326.64453125 L 167.9467926025391 1326.64453125 L 167.9467926025391 1322.8271484375 C 167.9467926025391 1321.699951171875 168.4310607910156 1321.073974609375 169.3991394042969 1321.073974609375 C 169.7161254882813 1321.0693359375 170.0308990478516 1321.12744140625 170.3252868652344 1321.245361328125 L 170.78173828125 1319.849365234375 C 170.4539337158203 1319.720458984375 170.0265197753906 1319.66357421875 169.7265014648438 1319.66357421875 M 130.0308227539063 1320.3759765625 C 129.318359375 1319.90625 128.3365936279297 1319.66357421875 127.2535858154297 1319.66357421875 C 125.5282287597656 1319.66357421875 124.4173889160156 1320.490478515625 124.4173889160156 1321.84375 C 124.4173889160156 1322.9541015625 125.244384765625 1323.63916015625 126.7672424316406 1323.852783203125 L 127.4668579101563 1323.952392578125 C 128.2789306640625 1324.066650390625 128.6623382568359 1324.280029296875 128.6623382568359 1324.6650390625 C 128.6623382568359 1325.19140625 128.1228942871094 1325.491943359375 127.1100006103516 1325.491943359375 C 126.0842590332031 1325.491943359375 125.3439788818359 1325.1640625 124.8447875976563 1324.779296875 L 124.14892578125 1325.934326171875 C 124.9609985351563 1326.532470703125 125.9867401123047 1326.818115234375 127.0975799560547 1326.818115234375 C 129.0644226074219 1326.818115234375 130.2042846679688 1325.89208984375 130.2042846679688 1324.59521484375 C 130.2042846679688 1323.39794921875 129.3071746826172 1322.77197265625 127.8249664306641 1322.558349609375 L 127.1270446777344 1322.45703125 C 126.4859313964844 1322.373779296875 125.9722137451172 1322.244873046875 125.9722137451172 1321.78857421875 C 125.9722137451172 1321.29052734375 126.4564514160156 1320.990966796875 127.2689514160156 1320.990966796875 C 128.1382446289063 1320.990966796875 128.9797668457031 1321.318603515625 129.3922424316406 1321.57470703125 L 130.0333404541016 1320.377685546875 Z M 149.1396484375 1319.664794921875 C 148.2852935791016 1319.664794921875 147.7288513183594 1320.064453125 147.3458251953125 1320.662841796875 L 147.3458251953125 1319.83447265625 L 145.8781585693359 1319.83447265625 L 145.8781585693359 1326.64453125 L 147.3591156005859 1326.64453125 L 147.3591156005859 1322.8271484375 C 147.3591156005859 1321.699951171875 147.8433685302734 1321.073974609375 148.8114471435547 1321.073974609375 C 149.1284484863281 1321.0693359375 149.4432220458984 1321.12744140625 149.7376251220703 1321.245361328125 L 150.1940307617188 1319.849365234375 C 149.8662261962891 1319.720458984375 149.4388427734375 1319.66357421875 149.1388397216797 1319.66357421875 M 136.5019683837891 1319.83447265625 L 134.0803527832031 1319.83447265625 L 134.0803527832031 1317.768310546875 L 132.5831909179688 1317.768310546875 L 132.5831909179688 1319.83447265625 L 131.2018432617188 1319.83447265625 L 131.2018432617188 1321.18798828125 L 132.5831909179688 1321.18798828125 L 132.5831909179688 1324.294921875 C 132.5831909179688 1325.875 133.1965026855469 1326.81591796875 134.9484100341797 1326.81591796875 C 135.5911865234375 1326.81591796875 136.3314208984375 1326.61669921875 136.8011627197266 1326.289306640625 L 136.3733520507813 1325.021484375 C 135.931396484375 1325.27734375 135.4471740722656 1325.406494140625 135.0621032714844 1325.406494140625 C 134.3218383789063 1325.406494140625 134.0803527832031 1324.949951171875 134.0803527832031 1324.2666015625 L 134.0803527832031 1321.189208984375 L 136.5019683837891 1321.189208984375 L 136.5019683837891 1319.83447265625 Z M 114.3607025146484 1326.646240234375 L 114.3607025146484 1322.372314453125 C 114.3607025146484 1320.7626953125 113.3349609375 1319.6796875 111.6813812255859 1319.6650390625 C 110.8120727539063 1319.650634765625 109.9153442382813 1319.921142578125 109.2875518798828 1320.876708984375 C 108.8178253173828 1320.12158203125 108.0775604248047 1319.6650390625 107.036865234375 1319.6650390625 C 106.3094482421875 1319.6650390625 105.5986328125 1319.87890625 105.0421905517578 1320.676513671875 L 105.0421905517578 1319.83447265625 L 103.5599975585938 1319.83447265625 L 103.5599975585938 1326.64453125 L 105.0538177490234 1326.64453125 L 105.0538177490234 1322.868408203125 C 105.0538177490234 1321.686279296875 105.7094421386719 1321.05810546875 106.721923828125 1321.05810546875 C 107.7053375244141 1321.05810546875 108.202880859375 1321.69921875 108.202880859375 1322.853759765625 L 108.202880859375 1326.643798828125 L 109.6999969482422 1326.643798828125 L 109.6999969482422 1322.86767578125 C 109.6999969482422 1321.685791015625 110.3834381103516 1321.057373046875 111.3664398193359 1321.057373046875 C 112.3776702880859 1321.057373046875 112.8602600097656 1321.6982421875 112.8602600097656 1322.852783203125 L 112.8602600097656 1326.642822265625 L 114.3607025146484 1326.646240234375 Z" fill="#231f20" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /><path transform="translate(-466.27, 75.82)" d="M 751.9898681640625 160.9944763183594 L 729.7100830078125 160.9944763183594 L 729.7100830078125 132.1500244140625 L 751.990478515625 132.1500244140625 L 751.9898681640625 160.9944763183594 Z" fill="#ff5f00" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /><path transform="translate(248.5, 207.97)" d="M 19.86117362976074 14.42168998718262 C 19.86117362976074 9.821571350097656 22.26115036010742 5.723763942718506 25.99837493896484 3.082959890365601 C 23.16948890686035 1.081061601638794 19.67058372497559 -0.005438449326902628 16.06805229187012 -0.0006609482225030661 C 7.193695545196533 -0.0006609482225030661 0 6.45634937286377 0 14.42168998718262 C 0 22.38703155517578 7.193695545196533 28.84403991699219 16.06805229187012 28.84403991699219 C 19.67067527770996 28.84886741638184 23.169677734375 27.76235961914063 25.99863433837891 25.76041412353516 C 22.26166915893555 23.12008476257324 19.86117362976074 19.02204132080078 19.86117362976074 14.42168998718262" fill="#eb001b" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /><path transform="translate(-723.88, 207.97)" d="M 1026.152954101563 14.42171859741211 C 1026.152954101563 22.38705635070801 1018.947326660156 28.84406852722168 1010.058166503906 28.84406852722168 C 1006.449340820313 28.84881591796875 1002.944152832031 27.76233673095703 1000.109924316406 25.76044654846191 C 1003.854431152344 23.11964225769043 1006.258361816406 19.02206802368164 1006.258361816406 14.42171669006348 C 1006.258361816406 9.821365356445313 1003.854431152344 5.723790168762207 1000.109924316406 3.082986831665039 C 1002.944030761719 1.081146121025085 1006.449096679688 -0.005327129270881414 1010.058044433594 -0.000632221344858408 C 1018.947143554688 -0.000632221344858408 1026.15283203125 6.456377506256104 1026.15283203125 14.42171859741211" fill="#f79e1b" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
 const String _svg_s3lwu9 =
     '<svg viewBox="313.0 228.5 2.2 1.0" ><path transform="translate(-1615.81, -748.67)" d="M 1931.011474609375 978.2159423828125 L 1931.011474609375 977.219970703125 L 1930.75244140625 977.219970703125 L 1930.4521484375 977.9033203125 L 1930.15380859375 977.219970703125 L 1929.8935546875 977.219970703125 L 1929.8935546875 978.2159423828125 L 1930.077880859375 978.2159423828125 L 1930.077880859375 977.465576171875 L 1930.358642578125 978.1129150390625 L 1930.54931640625 978.1129150390625 L 1930.829833984375 977.464111328125 L 1930.829833984375 978.2159423828125 L 1931.01220703125 978.2159423828125 Z M 1929.3662109375 978.2159423828125 L 1929.3662109375 977.3905029296875 L 1929.6982421875 977.3905029296875 L 1929.6982421875 977.2225341796875 L 1928.85009765625 977.2225341796875 L 1928.85009765625 977.3905029296875 L 1929.18212890625 977.3905029296875 L 1929.18212890625 978.2159423828125 L 1929.364501953125 978.2159423828125 Z" fill="#f79410" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
-const String _svg_gmp31d =
-    '<svg viewBox="68.5 461.5 218.0 1.0" ><path transform="translate(68.5, 461.5)" d="M 0 0 L 109 0" fill="none" stroke="#64c53b" stroke-width="4" stroke-miterlimit="4" stroke-linecap="butt" /><path transform="translate(177.5, 461.5)" d="M 0 0 L 109 0" fill="none" stroke="#a6b1a1" stroke-width="4" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
-const String _svg_9tn4e9 =
-    '<svg viewBox="1.5 6.0 21.5 15.0" ><path  d="M 3.454545497894287 6.000000476837158 L 21.04545402526855 6.000000476837158 C 22.12491989135742 6.000000476837158 23 6.839466571807861 23 7.875000476837158 L 23 19.125 C 23 20.1605339050293 22.12491989135742 21 21.04545402526855 21 L 3.454545497894287 21 C 2.375079870223999 21 1.5 20.1605339050293 1.5 19.125 L 1.5 7.875000476837158 C 1.5 6.839466094970703 2.375080108642578 6 3.454545736312866 6.000000476837158 Z" fill="none" stroke="#878a85" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><path transform="translate(0.0, -3.37)" d="M 1.5 15 L 23 15" fill="none" stroke="#878a85" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /></svg>';
+const String _svg_5mthib =
+    '<svg viewBox="68.5 443.5 218.0 1.0" ><path transform="translate(68.5, 443.5)" d="M 0 0 L 109 0" fill="none" stroke="#64c53b" stroke-width="4" stroke-miterlimit="4" stroke-linecap="butt" /><path transform="translate(177.5, 443.5)" d="M 0 0 L 109 0" fill="none" stroke="#a6b1a1" stroke-width="4" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
+const String _svg_vdjnj5 =
+    '<svg viewBox="0.0 0.1 251.0 91.0" ><path transform="translate(0.0, 0.12)" d="M 20.13479995727539 90.99990081787109 L 0 90.99990081787109 L 10.91340065002441 77.21131896972656 L 10.91340065002441 9 C 10.91340065002441 4.029300212860107 14.94270038604736 0 19.91340065002441 0 L 242.0001068115234 0 C 246.9708099365234 0 251.0001068115234 4.029300212860107 251.0001068115234 9 L 251.0001068115234 81.99990081787109 C 251.0001068115234 86.96970367431641 246.9708099365234 90.99990081787109 242.0001068115234 90.99990081787109 L 20.13479995727539 90.99990081787109 Z" fill="#5db1fd" stroke="none" stroke-width="1" stroke-miterlimit="10" stroke-linecap="butt" /></svg>';
+const String _svg_xs7dte =
+    '<svg viewBox="17.5 673.5 62.5 65.5" ><path transform="translate(17.54, 673.46)" d="M 31.22924995422363 0 C 48.4766845703125 0 62.45849990844727 14.67087268829346 62.45849990844727 32.768310546875 C 62.45849990844727 50.86574935913086 48.4766845703125 65.53662109375 31.22924995422363 65.53662109375 C 13.98181247711182 65.53662109375 0 50.86574935913086 0 32.768310546875 C 0 14.67087268829346 13.98181247711182 0 31.22924995422363 0 Z" fill="#5db1fd" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
