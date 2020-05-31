@@ -9,65 +9,122 @@ class ChatBarCode extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xffffffff),
-      body: Stack(
-        children: <Widget>[
-          Transform.translate(
-            offset: Offset(25.0, 13.0),
-            child:
-                // Adobe XD layer: 'Content' (group)
-                Stack(
-              children: <Widget>[
-                Transform.translate(
-                  offset: Offset(0.0, 187.5),
-                  child:
-                      // Adobe XD layer: 'Message 3' (group)
-                      Stack(
-                    children: <Widget>[
-                      Transform.translate(
-                        offset: Offset(38.0, 153.5),
-                        child:
-                            // Adobe XD layer: '8:11' (text)
-                            Text(
-                          '8:11',
-                          style: TextStyle(
-                            fontFamily: 'Fira Sans',
-                            fontSize: 10,
-                            color: const Color(0xff63697b),
-                            height: 1.2,
+      body: SafeArea(
+              child: Stack(
+          children: <Widget>[
+            Transform.translate(
+              offset: Offset(25.0, 13.0),
+              child:
+                  // Adobe XD layer: 'Content' (group)
+                  Stack(
+                children: <Widget>[
+                  Transform.translate(
+                    offset: Offset(0.0, 187.5),
+                    child:
+                        // Adobe XD layer: 'Message 3' (group)
+                        Stack(
+                      children: <Widget>[
+                        Transform.translate(
+                          offset: Offset(38.0, 153.5),
+                          child:
+                              // Adobe XD layer: '8:11' (text)
+                              Text(
+                            '8:11',
+                            style: TextStyle(
+                              fontFamily: 'Fira Sans',
+                              fontSize: 10,
+                              color: const Color(0xff63697b),
+                              height: 1.2,
+                            ),
+                            textAlign: TextAlign.left,
                           ),
-                          textAlign: TextAlign.left,
                         ),
-                      ),
-                      Transform.translate(
-                        offset: Offset(38.0, 0.0),
-                        child:
-                            // Adobe XD layer: 'Bullet' (group)
-                            Stack(
-                          children: <Widget>[
-                            Transform.translate(
-                              offset: Offset(0.0, -0.5),
-                              child:
-                                  // Adobe XD layer: 'Bullet' (shape)
-                                  SvgPicture.string(
-                                _svg_6dafn4,
-                                allowDrawingOutsideViewBox: true,
+                        Transform.translate(
+                          offset: Offset(38.0, 0.0),
+                          child:
+                              // Adobe XD layer: 'Bullet' (group)
+                              Stack(
+                            children: <Widget>[
+                              Transform.translate(
+                                offset: Offset(0.0, -0.5),
+                                child:
+                                    // Adobe XD layer: 'Bullet' (shape)
+                                    SvgPicture.string(
+                                  _svg_6dafn4,
+                                  allowDrawingOutsideViewBox: true,
+                                ),
+                              ),
+                              Transform.translate(
+                                offset: Offset(24.0, 10.5),
+                                child:
+                                    // Adobe XD layer: 'Hmm ... Tuesday nigh' (text)
+                                    SizedBox(
+                                  width: 196.0,
+                                  height: 131.0,
+                                  child: SingleChildScrollView(
+                                      child: Text(
+                                    'Para pagar através do código de barras é muito simples! Basta ir até a opção "Pagar com código de barras" no seu aplicativo e apontar o seu celular para o código que aparecerá na sua tela!',
+                                    style: TextStyle(
+                                      fontFamily: 'Fira Sans',
+                                      fontSize: 13,
+                                      color: const Color(0xff63697b),
+                                      height: 1.3846153846153846,
+                                    ),
+                                    textAlign: TextAlign.left,
+                                  )),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Transform.translate(
+                          offset: Offset(0.0, 118.5),
+                          child:
+                              // Adobe XD layer: 'Photo' (shape)
+                              Container(
+                            width: 30.0,
+                            height: 30.0,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(22.5),
+                              image: DecorationImage(
+                                image: const AssetImage('assets/images/duda.png'),
+                                fit: BoxFit.cover,
                               ),
                             ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Transform.translate(
+                    offset: Offset(94.81, 96.0),
+                    child:
+                        // Adobe XD layer: 'Message 2' (group)
+                        Stack(
+                      children: <Widget>[
+                        // Adobe XD layer: 'Bullet' (group)
+                        Stack(
+                          children: <Widget>[
+                            // Adobe XD layer: 'Bullet' (shape)
+                            SvgPicture.string(
+                              _svg_dqtpw1,
+                              allowDrawingOutsideViewBox: true,
+                            ),
                             Transform.translate(
-                              offset: Offset(24.0, 10.5),
+                              offset: Offset(15.19, 15.0),
                               child:
-                                  // Adobe XD layer: 'Hmm ... Tuesday nigh' (text)
+                                  // Adobe XD layer: 'Hi Ashley! Yes with' (text)
                                   SizedBox(
-                                width: 196.0,
-                                height: 131.0,
+                                width: 190.0,
+                                height: 36.0,
                                 child: SingleChildScrollView(
                                     child: Text(
-                                  'Para pagar através do código de barras é muito simples! Basta ir até a opção "Pagar com código de barras" no seu aplicativo e apontar o seu celular para o código que aparecerá na sua tela!',
+                                  'Hi Ashley! Yes with pleasure! Do you prefer when?',
                                   style: TextStyle(
                                     fontFamily: 'Fira Sans',
-                                    fontSize: 13,
-                                    color: const Color(0xff63697b),
-                                    height: 1.3846153846153846,
+                                    fontSize: 12,
+                                    color: const Color(0xffffffff),
+                                    height: 1.5,
                                   ),
                                   textAlign: TextAlign.left,
                                 )),
@@ -75,357 +132,153 @@ class ChatBarCode extends StatelessWidget {
                             ),
                           ],
                         ),
-                      ),
-                      Transform.translate(
-                        offset: Offset(0.0, 118.5),
-                        child:
-                            // Adobe XD layer: 'Photo' (shape)
-                            Container(
-                          width: 30.0,
-                          height: 30.0,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(22.5),
-                            image: DecorationImage(
-                              image: const AssetImage('assets/images/duda.png'),
-                              fit: BoxFit.cover,
+                        Transform.translate(
+                          offset: Offset(218.19, 74.0),
+                          child:
+                              // Adobe XD layer: 'Photo' (shape)
+                              Container(
+                            width: 12.0,
+                            height: 12.0,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(22.5),
+                              image: DecorationImage(
+                                image: const AssetImage('assets/images/duda.png'),
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
                         ),
-                      ),
-                    ],
+                        Transform.translate(
+                          offset: Offset(189.19, 77.67),
+                          child:
+                              // Adobe XD layer: '8:10' (text)
+                              SizedBox(
+                            width: 24.0,
+                            child: Text(
+                              '8:10 ',
+                              style: TextStyle(
+                                fontFamily: 'Fira Sans',
+                                fontSize: 10,
+                                color: const Color(0xff63697b),
+                                height: 1,
+                              ),
+                              textAlign: TextAlign.right,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-                Transform.translate(
-                  offset: Offset(94.81, 96.0),
-                  child:
-                      // Adobe XD layer: 'Message 2' (group)
-                      Stack(
-                    children: <Widget>[
-                      // Adobe XD layer: 'Bullet' (group)
-                      Stack(
-                        children: <Widget>[
-                          // Adobe XD layer: 'Bullet' (shape)
-                          SvgPicture.string(
-                            _svg_dqtpw1,
-                            allowDrawingOutsideViewBox: true,
-                          ),
-                          Transform.translate(
-                            offset: Offset(15.19, 15.0),
-                            child:
-                                // Adobe XD layer: 'Hi Ashley! Yes with' (text)
-                                SizedBox(
-                              width: 190.0,
-                              height: 36.0,
-                              child: SingleChildScrollView(
-                                  child: Text(
-                                'Hi Ashley! Yes with pleasure! Do you prefer when?',
-                                style: TextStyle(
-                                  fontFamily: 'Fira Sans',
-                                  fontSize: 12,
-                                  color: const Color(0xffffffff),
-                                  height: 1.5,
-                                ),
-                                textAlign: TextAlign.left,
-                              )),
-                            ),
-                          ),
-                        ],
-                      ),
-                      Transform.translate(
-                        offset: Offset(218.19, 74.0),
-                        child:
-                            // Adobe XD layer: 'Photo' (shape)
-                            Container(
-                          width: 12.0,
-                          height: 12.0,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(22.5),
-                            image: DecorationImage(
-                              image: const AssetImage('assets/images/duda.png'),
-                              fit: BoxFit.cover,
-                            ),
+                  Transform.translate(
+                    offset: Offset(94.81, 96.0),
+                    child:
+                        // Adobe XD layer: 'Bullet' (group)
+                        Stack(
+                      children: <Widget>[
+                        // Adobe XD layer: 'Bullet' (shape)
+                        SvgPicture.string(
+                          _svg_dqtpw1,
+                          allowDrawingOutsideViewBox: true,
+                        ),
+                        Transform.translate(
+                          offset: Offset(15.19, 16.0),
+                          child:
+                              // Adobe XD layer: 'Hi Ashley! Yes with' (text)
+                              SizedBox(
+                            width: 190.0,
+                            height: 36.0,
+                            child: SingleChildScrollView(
+                                child: Text(
+                              'Duda, como pagar as contas pelo leitor de código de barra?',
+                              style: TextStyle(
+                                fontFamily: 'Fira Sans',
+                                fontSize: 13,
+                                color: const Color(0xffffffff),
+                                height: 1.3846153846153846,
+                              ),
+                              textAlign: TextAlign.left,
+                            )),
                           ),
                         ),
-                      ),
-                      Transform.translate(
-                        offset: Offset(189.19, 77.67),
-                        child:
-                            // Adobe XD layer: '8:10' (text)
-                            SizedBox(
-                          width: 24.0,
-                          child: Text(
-                            '8:10 ',
+                      ],
+                    ),
+                  ),
+                  Transform.translate(
+                    offset: Offset(0.0, 364.89),
+                    child:
+                        // Adobe XD layer: 'Message 3' (group)
+                        Stack(
+                      children: <Widget>[
+                        Transform.translate(
+                          offset: Offset(48.0, 201.11),
+                          child:
+                              // Adobe XD layer: '8:11' (text)
+                              Text(
+                            '8:11',
                             style: TextStyle(
                               fontFamily: 'Fira Sans',
                               fontSize: 10,
                               color: const Color(0xff63697b),
-                              height: 1,
-                            ),
-                            textAlign: TextAlign.right,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Transform.translate(
-                  offset: Offset(94.81, 96.0),
-                  child:
-                      // Adobe XD layer: 'Bullet' (group)
-                      Stack(
-                    children: <Widget>[
-                      // Adobe XD layer: 'Bullet' (shape)
-                      SvgPicture.string(
-                        _svg_dqtpw1,
-                        allowDrawingOutsideViewBox: true,
-                      ),
-                      Transform.translate(
-                        offset: Offset(15.19, 16.0),
-                        child:
-                            // Adobe XD layer: 'Hi Ashley! Yes with' (text)
-                            SizedBox(
-                          width: 190.0,
-                          height: 36.0,
-                          child: SingleChildScrollView(
-                              child: Text(
-                            'Duda, como pagar as contas pelo leitor de código de barra?',
-                            style: TextStyle(
-                              fontFamily: 'Fira Sans',
-                              fontSize: 13,
-                              color: const Color(0xffffffff),
-                              height: 1.3846153846153846,
+                              height: 1.2,
                             ),
                             textAlign: TextAlign.left,
-                          )),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Transform.translate(
-                  offset: Offset(0.0, 364.89),
-                  child:
-                      // Adobe XD layer: 'Message 3' (group)
-                      Stack(
-                    children: <Widget>[
-                      Transform.translate(
-                        offset: Offset(48.0, 201.11),
-                        child:
-                            // Adobe XD layer: '8:11' (text)
-                            Text(
-                          '8:11',
-                          style: TextStyle(
-                            fontFamily: 'Fira Sans',
-                            fontSize: 10,
-                            color: const Color(0xff63697b),
-                            height: 1.2,
                           ),
-                          textAlign: TextAlign.left,
                         ),
-                      ),
-                      Transform.translate(
-                        offset: Offset(38.0, 0.11),
-                        child:
-                            // Adobe XD layer: 'Bullet' (group)
-                            Stack(
-                          children: <Widget>[
-                            // Adobe XD layer: 'Bullet' (shape)
-                            SvgPicture.string(
-                              _svg_26mjjn,
-                              allowDrawingOutsideViewBox: true,
-                            ),
-                          ],
+                        Transform.translate(
+                          offset: Offset(38.0, 0.11),
+                          child:
+                              // Adobe XD layer: 'Bullet' (group)
+                              Stack(
+                            children: <Widget>[
+                              // Adobe XD layer: 'Bullet' (shape)
+                              SvgPicture.string(
+                                _svg_26mjjn,
+                                allowDrawingOutsideViewBox: true,
+                              ),
+                            ],
+                          ),
                         ),
-                      ),
-                      Transform.translate(
-                        offset: Offset(0.0, 166.11),
-                        child:
-                            // Adobe XD layer: 'Photo' (shape)
-                            Container(
-                          width: 30.0,
-                          height: 30.0,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(22.5),
-                            image: DecorationImage(
-                              image: const AssetImage('assets/images/duda.png'),
-                              fit: BoxFit.cover,
+                        Transform.translate(
+                          offset: Offset(0.0, 166.11),
+                          child:
+                              // Adobe XD layer: 'Photo' (shape)
+                              Container(
+                            width: 30.0,
+                            height: 30.0,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(22.5),
+                              image: DecorationImage(
+                                image: const AssetImage('assets/images/duda.png'),
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
                         ),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(0.0, 694.0),
-            child:
-                // Adobe XD layer: 'Bottom' (group)
-                Stack(
-              children: <Widget>[
-                // Adobe XD layer: 'Background' (group)
-                Stack(
-                  children: <Widget>[
-                    // Adobe XD layer: 'Background' (shape)
-                    Container(
-                      width: 375.0,
-                      height: 75.0,
-                      decoration: BoxDecoration(
-                        color: const Color(0xffffffff),
-                        boxShadow: [
-                          BoxShadow(
-                            color: const Color(0x0f000000),
-                            offset: Offset(0, -4),
-                            blurRadius: 8,
-                          ),
-                        ],
-                      ),
+                      ],
                     ),
-                  ],
-                ),
-                Transform.translate(
-                  offset: Offset(121.0, 61.0),
-                  child:
-                      // Adobe XD layer: 'iPhone X/Home Indic…' (component)
-                      Container(),
-                ),
-                Transform.translate(
-                  offset: Offset(25.0, 21.19),
-                  child:
-                      // Adobe XD layer: 'Content' (group)
-                      Stack(
-                    children: <Widget>[
-                      Transform.translate(
-                        offset: Offset(0.0, 0.0),
-                        child:
-                            // Adobe XD layer: 'Text' (group)
-                            Stack(
-                          children: <Widget>[
-                            Transform.translate(
-                              offset: Offset(69.41, 7.33),
-                              child:
-                                  // Adobe XD layer: 'Type something' (text)
-                                  Text(
-                                'Type something',
-                                style: TextStyle(
-                                  fontFamily: 'Fira Sans',
-                                  fontSize: 14,
-                                  color: const Color(0xff63697b),
-                                  height: 1,
-                                ),
-                                textAlign: TextAlign.left,
-                              ),
-                            ),
-                            Transform.translate(
-                              offset: Offset(0.0, 0.21),
-                              child:
-                                  // Adobe XD layer: 'Icon' (group)
-                                  Stack(
-                                children: <Widget>[
-                                  Transform.translate(
-                                    offset: Offset(0.0, -0.4),
-                                    child:
-                                        // Adobe XD layer: 'Background' (shape)
-                                        Container(
-                                      width: 22.0,
-                                      height: 22.0,
-                                      decoration: BoxDecoration(
-                                        borderRadius:
-                                            BorderRadius.circular(6.0),
-                                        color: const Color(0xffbfc4d3),
-                                      ),
-                                    ),
-                                  ),
-                                  Transform(
-                                    transform: Matrix4(
-                                        -1.0,
-                                        0.0,
-                                        0.0,
-                                        0.0,
-                                        0.0,
-                                        -1.0,
-                                        0.0,
-                                        0.0,
-                                        0.0,
-                                        0.0,
-                                        1.0,
-                                        0.0,
-                                        13.5,
-                                        15.29,
-                                        0.0,
-                                        1.0),
-                                    child:
-                                        // Adobe XD layer: 'Icon' (group)
-                                        Stack(
-                                      children: <Widget>[
-                                        // Adobe XD layer: 'Arrow' (shape)
-                                        SvgPicture.string(
-                                          _svg_nlxme3,
-                                          allowDrawingOutsideViewBox: true,
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Transform.translate(
-                              offset: Offset(33.0, 0.0),
-                              child:
-                                  // Adobe XD layer: 'Icon' (group)
-                                  Stack(
-                                children: <Widget>[
-                                  Transform.translate(
-                                    offset: Offset(0.0, 0.0),
-                                    child:
-                                        // Adobe XD layer: 'Emojis' (shape)
-                                        SvgPicture.string(
-                                      _svg_z63q8t,
-                                      allowDrawingOutsideViewBox: true,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Transform.translate(
-                        offset: Offset(302.0, 0.0),
-                        child:
-                            // Adobe XD layer: 'Send' (shape)
-                            SvgPicture.string(
-                          _svg_78fq0c,
-                          allowDrawingOutsideViewBox: true,
-                        ),
-                      ),
-                    ],
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-          ),
-          // Adobe XD layer: 'Top' (group)
-          Stack(
-            children: <Widget>[
-              // Adobe XD layer: 'Background' (group)
-              Stack(
+            Transform.translate(
+              offset: Offset(0.0, 694.0),
+              child:
+                  // Adobe XD layer: 'Bottom' (group)
+                  Stack(
                 children: <Widget>[
-                  // Adobe XD layer: 'Background Shadow' (group)
+                  // Adobe XD layer: 'Background' (group)
                   Stack(
                     children: <Widget>[
                       // Adobe XD layer: 'Background' (shape)
                       Container(
                         width: 375.0,
-                        height: 56.0,
+                        height: 75.0,
                         decoration: BoxDecoration(
-                          color: const Color(0xfff7f8fb),
+                          color: const Color(0xffffffff),
                           boxShadow: [
                             BoxShadow(
                               color: const Color(0x0f000000),
-                              offset: Offset(0, 4),
+                              offset: Offset(0, -4),
                               blurRadius: 8,
                             ),
                           ],
@@ -434,152 +287,301 @@ class ChatBarCode extends StatelessWidget {
                     ],
                   ),
                   Transform.translate(
-                    offset: Offset(0.0, 55.0),
+                    offset: Offset(121.0, 61.0),
                     child:
-                        // Adobe XD layer: 'Line' (shape)
-                        Container(
-                      width: 375.0,
-                      height: 1.0,
-                      decoration: BoxDecoration(
-                        color: const Color(0xfff3f4f9),
-                      ),
+                        // Adobe XD layer: 'iPhone X/Home Indic…' (component)
+                        Container(),
+                  ),
+                  Transform.translate(
+                    offset: Offset(25.0, 21.19),
+                    child:
+                        // Adobe XD layer: 'Content' (group)
+                        Stack(
+                      children: <Widget>[
+                        Transform.translate(
+                          offset: Offset(0.0, 0.0),
+                          child:
+                              // Adobe XD layer: 'Text' (group)
+                              Stack(
+                            children: <Widget>[
+                              Transform.translate(
+                                offset: Offset(69.41, 7.33),
+                                child:
+                                    // Adobe XD layer: 'Type something' (text)
+                                    Text(
+                                  'Type something',
+                                  style: TextStyle(
+                                    fontFamily: 'Fira Sans',
+                                    fontSize: 14,
+                                    color: const Color(0xff63697b),
+                                    height: 1,
+                                  ),
+                                  textAlign: TextAlign.left,
+                                ),
+                              ),
+                              Transform.translate(
+                                offset: Offset(0.0, 0.21),
+                                child:
+                                    // Adobe XD layer: 'Icon' (group)
+                                    Stack(
+                                  children: <Widget>[
+                                    Transform.translate(
+                                      offset: Offset(0.0, -0.4),
+                                      child:
+                                          // Adobe XD layer: 'Background' (shape)
+                                          Container(
+                                        width: 22.0,
+                                        height: 22.0,
+                                        decoration: BoxDecoration(
+                                          borderRadius:
+                                              BorderRadius.circular(6.0),
+                                          color: const Color(0xffbfc4d3),
+                                        ),
+                                      ),
+                                    ),
+                                    Transform(
+                                      transform: Matrix4(
+                                          -1.0,
+                                          0.0,
+                                          0.0,
+                                          0.0,
+                                          0.0,
+                                          -1.0,
+                                          0.0,
+                                          0.0,
+                                          0.0,
+                                          0.0,
+                                          1.0,
+                                          0.0,
+                                          13.5,
+                                          15.29,
+                                          0.0,
+                                          1.0),
+                                      child:
+                                          // Adobe XD layer: 'Icon' (group)
+                                          Stack(
+                                        children: <Widget>[
+                                          // Adobe XD layer: 'Arrow' (shape)
+                                          SvgPicture.string(
+                                            _svg_nlxme3,
+                                            allowDrawingOutsideViewBox: true,
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Transform.translate(
+                                offset: Offset(33.0, 0.0),
+                                child:
+                                    // Adobe XD layer: 'Icon' (group)
+                                    Stack(
+                                  children: <Widget>[
+                                    Transform.translate(
+                                      offset: Offset(0.0, 0.0),
+                                      child:
+                                          // Adobe XD layer: 'Emojis' (shape)
+                                          SvgPicture.string(
+                                        _svg_z63q8t,
+                                        allowDrawingOutsideViewBox: true,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Transform.translate(
+                          offset: Offset(302.0, 0.0),
+                          child:
+                              // Adobe XD layer: 'Send' (shape)
+                              SvgPicture.string(
+                            _svg_78fq0c,
+                            allowDrawingOutsideViewBox: true,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ],
               ),
-              Transform.translate(
-                offset: Offset(55.0, 7.37),
-                child:
-                    // Adobe XD layer: 'Profile' (group)
-                    Stack(
+            ),
+            // Adobe XD layer: 'Top' (group)
+            Stack(
+              children: <Widget>[
+                // Adobe XD layer: 'Background' (group)
+                Stack(
                   children: <Widget>[
-                    Transform.translate(
-                      offset: Offset(0.0, 0.0),
-                      child:
-                          // Adobe XD layer: 'Photo' (group)
-                          Stack(
-                        children: <Widget>[
-                          Transform.translate(
-                            offset: Offset(0.0, -0.37),
-                            child:
-                                // Adobe XD layer: 'Photo' (shape)
-                                Container(
-                              width: 46.0,
-                              height: 46.0,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(22.5),
-                                image: DecorationImage(
-                                  image: const AssetImage(
-                                      'assets/images/duda.png'),
-                                  fit: BoxFit.cover,
-                                ),
-                                boxShadow: [
-                                  BoxShadow(
-                                    color: const Color(0x26000000),
-                                    offset: Offset(0, 4),
-                                    blurRadius: 8,
-                                  ),
-                                ],
+                    // Adobe XD layer: 'Background Shadow' (group)
+                    Stack(
+                      children: <Widget>[
+                        // Adobe XD layer: 'Background' (shape)
+                        Container(
+                          width: 375.0,
+                          height: 56.0,
+                          decoration: BoxDecoration(
+                            color: const Color(0xfff7f8fb),
+                            boxShadow: [
+                              BoxShadow(
+                                color: const Color(0x0f000000),
+                                offset: Offset(0, 4),
+                                blurRadius: 8,
                               ),
-                            ),
+                            ],
                           ),
-                          Transform.translate(
-                            offset: Offset(38.0, 3.63),
-                            child:
-                                // Adobe XD layer: 'Connect' (shape)
-                                Container(
-                              width: 10.0,
-                              height: 10.0,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.all(
-                                    Radius.elliptical(5.0, 5.0)),
-                                color: const Color(0xff84c857),
-                                border: Border.all(
-                                    width: 1.5, color: const Color(0xfff3f4f9)),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Transform.translate(
-                      offset: Offset(61.0, 6.63),
-                      child:
-                          // Adobe XD layer: 'Blair Dota' (text)
-                          Text(
-                        'Duda',
-                        style: TextStyle(
-                          fontFamily: 'Arial',
-                          fontSize: 16,
-                          color: const Color(0xff000000),
-                          fontWeight: FontWeight.w700,
                         ),
-                        textAlign: TextAlign.left,
-                      ),
+                      ],
                     ),
                     Transform.translate(
-                      offset: Offset(61.0, 26.0),
+                      offset: Offset(0.0, 55.0),
                       child:
-                          // Adobe XD layer: 'Online 2' (group)
-                          Stack(
-                        children: <Widget>[
-                          Transform.translate(
-                            offset: Offset(0.0, -0.37),
-                            child:
-                                // Adobe XD layer: 'Online' (text)
-                                Text(
-                              'Online',
-                              style: TextStyle(
-                                fontFamily: 'Arial',
-                                fontSize: 14,
-                                color: const Color(0x80000000),
+                          // Adobe XD layer: 'Line' (shape)
+                          Container(
+                        width: 375.0,
+                        height: 1.0,
+                        decoration: BoxDecoration(
+                          color: const Color(0xfff3f4f9),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                Transform.translate(
+                  offset: Offset(55.0, 7.37),
+                  child:
+                      // Adobe XD layer: 'Profile' (group)
+                      Stack(
+                    children: <Widget>[
+                      Transform.translate(
+                        offset: Offset(0.0, 0.0),
+                        child:
+                            // Adobe XD layer: 'Photo' (group)
+                            Stack(
+                          children: <Widget>[
+                            Transform.translate(
+                              offset: Offset(0.0, -0.37),
+                              child:
+                                  // Adobe XD layer: 'Photo' (shape)
+                                  Container(
+                                width: 46.0,
+                                height: 46.0,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(22.5),
+                                  image: DecorationImage(
+                                    image: const AssetImage(
+                                        'assets/images/duda.png'),
+                                    fit: BoxFit.cover,
+                                  ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: const Color(0x26000000),
+                                      offset: Offset(0, 4),
+                                      blurRadius: 8,
+                                    ),
+                                  ],
+                                ),
                               ),
-                              textAlign: TextAlign.left,
                             ),
+                            Transform.translate(
+                              offset: Offset(38.0, 3.63),
+                              child:
+                                  // Adobe XD layer: 'Connect' (shape)
+                                  Container(
+                                width: 10.0,
+                                height: 10.0,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.all(
+                                      Radius.elliptical(5.0, 5.0)),
+                                  color: const Color(0xff84c857),
+                                  border: Border.all(
+                                      width: 1.5, color: const Color(0xfff3f4f9)),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Transform.translate(
+                        offset: Offset(61.0, 6.63),
+                        child:
+                            // Adobe XD layer: 'Blair Dota' (text)
+                            Text(
+                          'Duda',
+                          style: TextStyle(
+                            fontFamily: 'Arial',
+                            fontSize: 16,
+                            color: const Color(0xff000000),
+                            fontWeight: FontWeight.w700,
                           ),
-                        ],
+                          textAlign: TextAlign.left,
+                        ),
                       ),
-                    ),
-                  ],
-                ),
-              ),
-              Transform(
-                transform: Matrix4(-1.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0, 0.0,
-                    0.0, 0.0, 1.0, 0.0, 34.5, 41.44, 0.0, 1.0),
-                child:
-                    // Adobe XD layer: 'Icon' (group)
-                    Stack(
-                  children: <Widget>[
-                    Transform.translate(
-                      offset: Offset(0.0, 0.0),
-                      child:
-                          // Adobe XD layer: 'Arrow' (shape)
-                          SvgPicture.string(
-                        _svg_e231xb,
-                        allowDrawingOutsideViewBox: true,
+                      Transform.translate(
+                        offset: Offset(61.0, 26.0),
+                        child:
+                            // Adobe XD layer: 'Online 2' (group)
+                            Stack(
+                          children: <Widget>[
+                            Transform.translate(
+                              offset: Offset(0.0, -0.37),
+                              child:
+                                  // Adobe XD layer: 'Online' (text)
+                                  Text(
+                                'Online',
+                                style: TextStyle(
+                                  fontFamily: 'Arial',
+                                  fontSize: 14,
+                                  color: const Color(0x80000000),
+                                ),
+                                textAlign: TextAlign.left,
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
-              ),
-            ],
-          ),
-          Transform.translate(
-            offset: Offset(91.0, 399.0),
-            child:
-                // Adobe XD layer: 'df65601a-9368-4489-…' (shape)
-                Container(
-              width: 264.0,
-              height: 153.5,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: const AssetImage('assets/images/codigo_barras.jpg'),
-                  fit: BoxFit.fill,
+                Transform(
+                  transform: Matrix4(-1.0, 0.0, 0.0, 0.0, 0.0, -1.0, 0.0, 0.0,
+                      0.0, 0.0, 1.0, 0.0, 34.5, 41.44, 0.0, 1.0),
+                  child:
+                      // Adobe XD layer: 'Icon' (group)
+                      Stack(
+                    children: <Widget>[
+                      Transform.translate(
+                        offset: Offset(0.0, 0.0),
+                        child:
+                            // Adobe XD layer: 'Arrow' (shape)
+                            SvgPicture.string(
+                          _svg_e231xb,
+                          allowDrawingOutsideViewBox: true,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            Transform.translate(
+              offset: Offset(91.0, 399.0),
+              child:
+                  // Adobe XD layer: 'df65601a-9368-4489-…' (shape)
+                  Container(
+                width: 264.0,
+                height: 153.5,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: const AssetImage('assets/images/codigo_barras.jpg'),
+                    fit: BoxFit.fill,
+                  ),
                 ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
