@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:teste/Chat.dart';
 import 'package:teste/ChatBarCode.dart';
 import 'package:teste/FirstChallenge.dart';
-
+import 'package:teste/HomeScreen.dart';
+import 'ChatVideo.dart';
 import 'InitialChat.dart';
+import 'MundoBMG.dart';
 
 void main() {
   runApp(MyApp());
@@ -31,7 +33,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: ChatBarCode(),
+      home: HomeScreen(),
     );
   }
 }
