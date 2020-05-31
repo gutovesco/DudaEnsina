@@ -13,423 +13,425 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xfff2f2f2),
-      body: Stack(
-        children: <Widget>[
-          Transform.translate(
-            offset: Offset(0.0, -357.0),
-            child: Container(
-              width: 919.0,
-              height: 678.0,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.elliptical(459.5, 99.0)),
-                gradient: LinearGradient(
-                  begin: Alignment(0.0, -1.0),
-                  end: Alignment(0.0, 1.0),
-                  colors: [
-                    const Color(0xfff3781f),
-                    const Color(0xfff6ae79),
-                    const Color(0xfff18437),
-                    const Color(0xfffe994f),
-                    const Color(0xfff1771f),
-                    const Color(0xff7a3c10)
-                  ],
-                  stops: [0.0, 0.247, 0.854, 1.0, 1.0, 1.0],
+      body: SafeArea(
+              child: Stack(
+          children: <Widget>[
+            Transform.translate(
+              offset: Offset(0.0, -357.0),
+              child: Container(
+                width: 919.0,
+                height: 678.0,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.elliptical(459.5, 99.0)),
+                  gradient: LinearGradient(
+                    begin: Alignment(0.0, -1.0),
+                    end: Alignment(0.0, 1.0),
+                    colors: [
+                      const Color(0xfff3781f),
+                      const Color(0xfff6ae79),
+                      const Color(0xfff18437),
+                      const Color(0xfffe994f),
+                      const Color(0xfff1771f),
+                      const Color(0xff7a3c10)
+                    ],
+                    stops: [0.0, 0.247, 0.854, 1.0, 1.0, 1.0],
+                  ),
                 ),
               ),
             ),
-          ),
-          Transform.translate(
-            offset: Offset(26.0, 22.0),
-            child:
-                // Adobe XD layer: 'Icon material-perso…' (shape)
-                SvgPicture.string(
-              _svg_axgb1n,
-              allowDrawingOutsideViewBox: true,
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(67.5, 13.5),
-            child: SizedBox(
-              width: 86.0,
-              height: 21.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                'João',
-                style: TextStyle(
-                  fontFamily: 'Century Gothic',
-                  fontSize: 14,
-                  color: const Color(0xffffffff),
-                ),
-                textAlign: TextAlign.left,
-              )),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(67.5, 38.5),
-            child: SizedBox(
-              width: 171.0,
-              height: 17.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                'ag 0065 c/c 12345-67',
-                style: TextStyle(
-                  fontFamily: 'Century Gothic',
-                  fontSize: 14,
-                  color: const Color(0xffffffff),
-                ),
-                textAlign: TextAlign.left,
-              )),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(324.98, 18.0),
-            child:
-                // Adobe XD layer: 'Icon feather-rotate…' (group)
-                Stack(
-              children: <Widget>[
-                IconButton(icon: Icon(Icons.dashboard),
-                color: Colors.white,
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => MundoBMG()),
-                  );
-                },
-                )
-              ],
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(68.0, 110.0),
-            child: SvgPicture.string(
-              _svg_2fbuvh,
-              allowDrawingOutsideViewBox: true,
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(199.5, 130.5),
-            child: SizedBox(
-              width: 79.0,
-              height: 32.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                'BMG',
-                style: TextStyle(
-                  fontFamily: 'Cooper',
-                  fontSize: 20,
-                  color: const Color(0xff666666),
-                  fontWeight: FontWeight.w900,
-                ),
-                textAlign: TextAlign.left,
-              )),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(248.5, 126.0),
-            child: SizedBox(
-              width: 61.0,
-              height: 27.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                'CARD',
-                style: TextStyle(
-                  fontFamily: 'Gadugi',
-                  fontSize: 20,
-                  color: const Color(0xff666666),
-                ),
-                textAlign: TextAlign.left,
-              )),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(98.5, 166.5),
-            child: SizedBox(
-              width: 220.0,
-              height: 31.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                '5135 9739 3124 9893',
-                style: TextStyle(
-                  fontFamily: 'Gadugi',
-                  fontSize: 20,
-                  color: const Color(0xffffffff),
-                ),
-                textAlign: TextAlign.left,
-              )),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(98.5, 216.5),
-            child: SizedBox(
-              width: 100.0,
-              height: 23.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                'João M Silva',
-                style: TextStyle(
-                  fontFamily: 'Century Gothic',
-                  fontSize: 14,
-                  color: const Color(0xffffffff),
-                ),
-                textAlign: TextAlign.left,
-              )),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(313.04, 228.55),
-            child: SvgPicture.string(
-              _svg_s3lwu9,
-              allowDrawingOutsideViewBox: true,
-            ),
-          ),
-          Stack(
-            children: <Widget>[
-              Transform.translate(
-                offset: Offset(236.3, 207.97),
-                child: SvgPicture.string(
-                  _svg_6n9y6w,
-                  allowDrawingOutsideViewBox: true,
-                ),
-              ),
-            ],
-          ),
-          Transform.translate(
-            offset: Offset(137.0, 332.0),
-            child: SizedBox(
-              width: 143.0,
-              height: 21.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                'Limite Disponível:',
-                style: TextStyle(
-                  fontFamily: 'Century Gothic',
-                  fontSize: 13,
-                  color: const Color(0xff000000),
-                ),
-                textAlign: TextAlign.left,
-              )),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(99.0, 357.0),
-            child: SizedBox(
-              width: 177.0,
-              height: 38.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                'R\$ 499, 90',
-                style: TextStyle(
-                  fontFamily: 'Century Gothic',
-                  fontSize: 27,
-                  color: const Color(0xff000000),
-                ),
-                textAlign: TextAlign.center,
-              )),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(68.5, 443.5),
-            child: SvgPicture.string(
-              _svg_5mthib,
-              allowDrawingOutsideViewBox: true,
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(227.0, 422.0),
-            child: SizedBox(
-              width: 83.0,
-              height: 17.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                'Limite Total',
-                style: TextStyle(
-                  fontFamily: 'Century Gothic',
-                  fontSize: 12,
-                  color: const Color(0xff938d8d),
-                ),
-                textAlign: TextAlign.left,
-              )),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(234.0, 449.0),
-            child: SizedBox(
-              width: 83.0,
-              height: 17.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                'R\$ 789,98',
-                style: TextStyle(
-                  fontFamily: 'Century Gothic',
-                  fontSize: 12,
-                  color: const Color(0xff938d8d),
-                ),
-                textAlign: TextAlign.left,
-              )),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(54.0, 498.0),
-            child: Container(
-              width: 123.0,
-              height: 36.0,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(26.0),
-                color: const Color(0xffffffff),
-                border: Border.all(width: 1.0, color: const Color(0xfff4893d)),
+            Transform.translate(
+              offset: Offset(26.0, 22.0),
+              child:
+                  // Adobe XD layer: 'Icon material-perso…' (shape)
+                  SvgPicture.string(
+                _svg_axgb1n,
+                allowDrawingOutsideViewBox: true,
               ),
             ),
-          ),
-          Transform.translate(
-            offset: Offset(65.5, 504.5),
-            child: SizedBox(
-              width: 100.0,
-              height: 23.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                'Faturas',
-                style: TextStyle(
-                  fontFamily: 'Century Gothic',
-                  fontSize: 14,
-                  color: const Color(0xfff58a3e),
-                ),
-                textAlign: TextAlign.center,
-              )),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(203.0, 498.0),
-            child: Container(
-              width: 123.0,
-              height: 36.0,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(26.0),
-                gradient: LinearGradient(
-                  begin: Alignment(0.81, 0.0),
-                  end: Alignment(-0.88, 0.0),
-                  colors: [const Color(0xffff6a01), const Color(0xffffb47f)],
-                  stops: [0.0, 1.0],
-                ),
-                border: Border.all(width: 1.0, color: const Color(0xfff4893d)),
+            Transform.translate(
+              offset: Offset(67.5, 13.5),
+              child: SizedBox(
+                width: 86.0,
+                height: 21.0,
+                child: SingleChildScrollView(
+                    child: Text(
+                  'João',
+                  style: TextStyle(
+                    fontFamily: 'Century Gothic',
+                    fontSize: 14,
+                    color: const Color(0xffffffff),
+                  ),
+                  textAlign: TextAlign.left,
+                )),
               ),
             ),
-          ),
-          Transform.translate(
-            offset: Offset(214.5, 505.5),
-            child: SizedBox(
-              width: 100.0,
-              height: 23.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                'Pagar',
-                style: TextStyle(
-                  fontFamily: 'Century Gothic',
-                  fontSize: 14,
-                  color: const Color(0xffffffff),
-                ),
-                textAlign: TextAlign.center,
-              )),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(49.0, 561.0),
-            child: Container(
-              width: 272.0,
-              height: 36.0,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(26.0),
-                color: const Color(0xffffffff),
-                border: Border.all(width: 1.0, color: const Color(0xfff4893d)),
+            Transform.translate(
+              offset: Offset(67.5, 38.5),
+              child: SizedBox(
+                width: 171.0,
+                height: 17.0,
+                child: SingleChildScrollView(
+                    child: Text(
+                  'ag 0065 c/c 12345-67',
+                  style: TextStyle(
+                    fontFamily: 'Century Gothic',
+                    fontSize: 14,
+                    color: const Color(0xffffffff),
+                  ),
+                  textAlign: TextAlign.left,
+                )),
               ),
             ),
-          ),
-          Transform.translate(
-            offset: Offset(140.5, 567.5),
-            child: SizedBox(
-              width: 100.0,
-              height: 23.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                'Saque',
-                style: TextStyle(
-                  fontFamily: 'Century Gothic',
-                  fontSize: 14,
-                  color: const Color(0xfff58a3e),
-                ),
-                textAlign: TextAlign.center,
-              )),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(63.0, 635.88),
-            child:
-                // Adobe XD layer: 'Bullet' (group)
-                GestureDetector(
-                  onTap: (){
+            Transform.translate(
+              offset: Offset(324.98, 18.0),
+              child:
+                  // Adobe XD layer: 'Icon feather-rotate…' (group)
+                  Stack(
+                children: <Widget>[
+                  IconButton(icon: Icon(Icons.dashboard),
+                  color: Colors.white,
+                  onPressed: () {
                     Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => InitialChat()),
-                  );
+                      context,
+                      MaterialPageRoute(builder: (context) => MundoBMG()),
+                    );
                   },
-                                  child: Stack(
+                  )
+                ],
+              ),
+            ),
+            Transform.translate(
+              offset: Offset(68.0, 110.0),
+              child: SvgPicture.string(
+                _svg_2fbuvh,
+                allowDrawingOutsideViewBox: true,
+              ),
+            ),
+            Transform.translate(
+              offset: Offset(199.5, 130.5),
+              child: SizedBox(
+                width: 79.0,
+                height: 32.0,
+                child: SingleChildScrollView(
+                    child: Text(
+                  'BMG',
+                  style: TextStyle(
+                    fontFamily: 'Cooper',
+                    fontSize: 20,
+                    color: const Color(0xff666666),
+                    fontWeight: FontWeight.w900,
+                  ),
+                  textAlign: TextAlign.left,
+                )),
+              ),
+            ),
+            Transform.translate(
+              offset: Offset(248.5, 126.0),
+              child: SizedBox(
+                width: 61.0,
+                height: 27.0,
+                child: SingleChildScrollView(
+                    child: Text(
+                  'CARD',
+                  style: TextStyle(
+                    fontFamily: 'Gadugi',
+                    fontSize: 20,
+                    color: const Color(0xff666666),
+                  ),
+                  textAlign: TextAlign.left,
+                )),
+              ),
+            ),
+            Transform.translate(
+              offset: Offset(98.5, 166.5),
+              child: SizedBox(
+                width: 220.0,
+                height: 31.0,
+                child: SingleChildScrollView(
+                    child: Text(
+                  '5135 9739 3124 9893',
+                  style: TextStyle(
+                    fontFamily: 'Gadugi',
+                    fontSize: 20,
+                    color: const Color(0xffffffff),
+                  ),
+                  textAlign: TextAlign.left,
+                )),
+              ),
+            ),
+            Transform.translate(
+              offset: Offset(98.5, 216.5),
+              child: SizedBox(
+                width: 100.0,
+                height: 23.0,
+                child: SingleChildScrollView(
+                    child: Text(
+                  'João M Silva',
+                  style: TextStyle(
+                    fontFamily: 'Century Gothic',
+                    fontSize: 14,
+                    color: const Color(0xffffffff),
+                  ),
+                  textAlign: TextAlign.left,
+                )),
+              ),
+            ),
+            Transform.translate(
+              offset: Offset(313.04, 228.55),
+              child: SvgPicture.string(
+                _svg_s3lwu9,
+                allowDrawingOutsideViewBox: true,
+              ),
+            ),
+            Stack(
               children: <Widget>[
-                  Transform.translate(
-                    offset: Offset(0.0, 0.12),
-                    child:
-                        // Adobe XD layer: 'Bullet' (shape)
-                        SvgPicture.string(
-                      _svg_vdjnj5,
-                      allowDrawingOutsideViewBox: true,
-                    ),
+                Transform.translate(
+                  offset: Offset(236.3, 207.97),
+                  child: SvgPicture.string(
+                    _svg_6n9y6w,
+                    allowDrawingOutsideViewBox: true,
                   ),
-                  Transform.translate(
-                    offset: Offset(25.0, 8.12),
-                    child:
-                        // Adobe XD layer: 'Hmm ... Tuesday nigh' (text)
-                        SizedBox(
-                      width: 211.0,
-                      height: 82.0,
-                      child: SingleChildScrollView(
-                          child: Text(
-                        'Olá joão, reparei que você quase atingiu o limite total, que tal algumas dicas sobre como poupar seu dinheiro?',
-                        style: TextStyle(
-                          fontFamily: 'Fira Sans',
-                          fontSize: 14,
-                          color: const Color(0xffffffff),
-                          height: 1.2857142857142858,
-                        ),
-                        textAlign: TextAlign.left,
-                      )),
-                    ),
-                  ),
+                ),
               ],
             ),
-                ),
-          ),
-          Transform.translate(
-            offset: Offset(17.54, 673.46),
-            child: SvgPicture.string(
-              _svg_xs7dte,
-              allowDrawingOutsideViewBox: true,
+            Transform.translate(
+              offset: Offset(137.0, 332.0),
+              child: SizedBox(
+                width: 143.0,
+                height: 21.0,
+                child: SingleChildScrollView(
+                    child: Text(
+                  'Limite Disponível:',
+                  style: TextStyle(
+                    fontFamily: 'Century Gothic',
+                    fontSize: 13,
+                    color: const Color(0xff000000),
+                  ),
+                  textAlign: TextAlign.left,
+                )),
+              ),
             ),
-          ),
-          Transform.translate(
-            offset: Offset(27.0, 685.0),
-            child:
-                // Adobe XD layer: 'Photo' (shape)
-                Container(
-              width: 43.0,
-              height: 42.0,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(22.5),
-                image: DecorationImage(
-                  image: const AssetImage('assets/images/duda.png'),
-                  fit: BoxFit.cover,
+            Transform.translate(
+              offset: Offset(99.0, 357.0),
+              child: SizedBox(
+                width: 177.0,
+                height: 38.0,
+                child: SingleChildScrollView(
+                    child: Text(
+                  'R\$ 499, 90',
+                  style: TextStyle(
+                    fontFamily: 'Century Gothic',
+                    fontSize: 27,
+                    color: const Color(0xff000000),
+                  ),
+                  textAlign: TextAlign.center,
+                )),
+              ),
+            ),
+            Transform.translate(
+              offset: Offset(68.5, 443.5),
+              child: SvgPicture.string(
+                _svg_5mthib,
+                allowDrawingOutsideViewBox: true,
+              ),
+            ),
+            Transform.translate(
+              offset: Offset(227.0, 422.0),
+              child: SizedBox(
+                width: 83.0,
+                height: 17.0,
+                child: SingleChildScrollView(
+                    child: Text(
+                  'Limite Total',
+                  style: TextStyle(
+                    fontFamily: 'Century Gothic',
+                    fontSize: 12,
+                    color: const Color(0xff938d8d),
+                  ),
+                  textAlign: TextAlign.left,
+                )),
+              ),
+            ),
+            Transform.translate(
+              offset: Offset(234.0, 449.0),
+              child: SizedBox(
+                width: 83.0,
+                height: 17.0,
+                child: SingleChildScrollView(
+                    child: Text(
+                  'R\$ 789,98',
+                  style: TextStyle(
+                    fontFamily: 'Century Gothic',
+                    fontSize: 12,
+                    color: const Color(0xff938d8d),
+                  ),
+                  textAlign: TextAlign.left,
+                )),
+              ),
+            ),
+            Transform.translate(
+              offset: Offset(54.0, 498.0),
+              child: Container(
+                width: 123.0,
+                height: 36.0,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(26.0),
+                  color: const Color(0xffffffff),
+                  border: Border.all(width: 1.0, color: const Color(0xfff4893d)),
                 ),
               ),
             ),
-          ),
-        ],
+            Transform.translate(
+              offset: Offset(65.5, 504.5),
+              child: SizedBox(
+                width: 100.0,
+                height: 23.0,
+                child: SingleChildScrollView(
+                    child: Text(
+                  'Faturas',
+                  style: TextStyle(
+                    fontFamily: 'Century Gothic',
+                    fontSize: 14,
+                    color: const Color(0xfff58a3e),
+                  ),
+                  textAlign: TextAlign.center,
+                )),
+              ),
+            ),
+            Transform.translate(
+              offset: Offset(203.0, 498.0),
+              child: Container(
+                width: 123.0,
+                height: 36.0,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(26.0),
+                  gradient: LinearGradient(
+                    begin: Alignment(0.81, 0.0),
+                    end: Alignment(-0.88, 0.0),
+                    colors: [const Color(0xffff6a01), const Color(0xffffb47f)],
+                    stops: [0.0, 1.0],
+                  ),
+                  border: Border.all(width: 1.0, color: const Color(0xfff4893d)),
+                ),
+              ),
+            ),
+            Transform.translate(
+              offset: Offset(214.5, 505.5),
+              child: SizedBox(
+                width: 100.0,
+                height: 23.0,
+                child: SingleChildScrollView(
+                    child: Text(
+                  'Pagar',
+                  style: TextStyle(
+                    fontFamily: 'Century Gothic',
+                    fontSize: 14,
+                    color: const Color(0xffffffff),
+                  ),
+                  textAlign: TextAlign.center,
+                )),
+              ),
+            ),
+            Transform.translate(
+              offset: Offset(49.0, 561.0),
+              child: Container(
+                width: 272.0,
+                height: 36.0,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(26.0),
+                  color: const Color(0xffffffff),
+                  border: Border.all(width: 1.0, color: const Color(0xfff4893d)),
+                ),
+              ),
+            ),
+            Transform.translate(
+              offset: Offset(140.5, 567.5),
+              child: SizedBox(
+                width: 100.0,
+                height: 23.0,
+                child: SingleChildScrollView(
+                    child: Text(
+                  'Saque',
+                  style: TextStyle(
+                    fontFamily: 'Century Gothic',
+                    fontSize: 14,
+                    color: const Color(0xfff58a3e),
+                  ),
+                  textAlign: TextAlign.center,
+                )),
+              ),
+            ),
+            Transform.translate(
+              offset: Offset(63.0, 635.88),
+              child:
+                  // Adobe XD layer: 'Bullet' (group)
+                  GestureDetector(
+                    onTap: (){
+                      Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => InitialChat()),
+                    );
+                    },
+                                    child: Stack(
+                children: <Widget>[
+                    Transform.translate(
+                      offset: Offset(0.0, 0.12),
+                      child:
+                          // Adobe XD layer: 'Bullet' (shape)
+                          SvgPicture.string(
+                        _svg_vdjnj5,
+                        allowDrawingOutsideViewBox: true,
+                      ),
+                    ),
+                    Transform.translate(
+                      offset: Offset(25.0, 8.12),
+                      child:
+                          // Adobe XD layer: 'Hmm ... Tuesday nigh' (text)
+                          SizedBox(
+                        width: 211.0,
+                        height: 82.0,
+                        child: SingleChildScrollView(
+                            child: Text(
+                          'Olá joão, reparei que você quase atingiu o limite total, que tal algumas dicas sobre como poupar seu dinheiro?',
+                          style: TextStyle(
+                            fontFamily: 'Fira Sans',
+                            fontSize: 14,
+                            color: const Color(0xffffffff),
+                            height: 1.2857142857142858,
+                          ),
+                          textAlign: TextAlign.left,
+                        )),
+                      ),
+                    ),
+                ],
+              ),
+                  ),
+            ),
+            Transform.translate(
+              offset: Offset(17.54, 673.46),
+              child: SvgPicture.string(
+                _svg_xs7dte,
+                allowDrawingOutsideViewBox: true,
+              ),
+            ),
+            Transform.translate(
+              offset: Offset(27.0, 685.0),
+              child:
+                  // Adobe XD layer: 'Photo' (shape)
+                  Container(
+                width: 43.0,
+                height: 42.0,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(22.5),
+                  image: DecorationImage(
+                    image: const AssetImage('assets/images/duda.png'),
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

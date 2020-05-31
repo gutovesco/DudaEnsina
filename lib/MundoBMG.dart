@@ -65,15 +65,20 @@ class MundoBMG extends StatelessWidget {
                         0.0, 0.0, 1.0, 0.0, 70.76, 35.87, 0.0, 1.0),
                     child:
                         // Adobe XD layer: 'Icon' (group)
-                        Stack(
+                        GestureDetector(
+                          onTap: (){
+                            Navigator.pop(context);
+                          },
+                                                  child: Stack(
                       children: <Widget>[
-                        // Adobe XD layer: 'Arrow' (shape)
-                        SvgPicture.string(
-                          _svg_x7ik7r,
-                          allowDrawingOutsideViewBox: true,
-                        ),
+                          // Adobe XD layer: 'Arrow' (shape)
+                          SvgPicture.string(
+                            _svg_x7ik7r,
+                            allowDrawingOutsideViewBox: true,
+                          ),
                       ],
                     ),
+                        ),
                   ),
                 ],
               ),
