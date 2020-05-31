@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:teste/XDInicio.dart';
+import 'package:teste/HomeScreen.dart';
 
 class XDCorpo extends StatelessWidget {
   XDCorpo({
@@ -162,7 +162,7 @@ class XDCorpo extends StatelessWidget {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => XDInicio()),
+                  MaterialPageRoute(builder: (context) => HomeScreen()),
                 );
               },
                 child: Text(

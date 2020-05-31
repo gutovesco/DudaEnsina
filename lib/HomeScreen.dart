@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class XDInicio extends StatelessWidget {
-  XDInicio({
+class HomeScreen extends StatelessWidget {
+  HomeScreen({
     Key key,
   }) : super(key: key);
   @override
@@ -11,14 +11,13 @@ class XDInicio extends StatelessWidget {
       backgroundColor: const Color(0xfff2f2f2),
       body: Stack(
         children: <Widget>[
-          SizedBox(height: 20),
           Transform.translate(
-            offset: Offset(0, -357.0),
+            offset: Offset(-272.0, -357.0),
             child: Container(
-              width: 600.0,
+              width: 919.0,
               height: 678.0,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.elliptical(459.5, 80.0)),
+                borderRadius: BorderRadius.all(Radius.elliptical(459.5, 339.0)),
                 gradient: LinearGradient(
                   begin: Alignment(0.0, -1.0),
                   end: Alignment(0.0, 1.0),
@@ -48,7 +47,7 @@ class XDInicio extends StatelessWidget {
             offset: Offset(67.5, 13.5),
             child: SizedBox(
               width: 86.0,
-              height: 51.0,
+              height: 21.0,
               child: SingleChildScrollView(
                   child: Text(
                 'João',
@@ -366,74 +365,6 @@ class XDInicio extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(28.0, 663.0),
-            child: SizedBox(
-              width: 171.0,
-              height: 30.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                'Melhor data de compra:',
-                style: TextStyle(
-                  fontFamily: 'Century Gothic',
-                  fontSize: 13,
-                  color: const Color(0xff000000),
-                ),
-                textAlign: TextAlign.left,
-              )),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(72.0, 685.0),
-            child: SizedBox(
-              width: 103.0,
-              height: 30.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                '22/06/2020',
-                style: TextStyle(
-                  fontFamily: 'Century Gothic',
-                  fontSize: 13,
-                  color: const Color(0xff000000),
-                ),
-                textAlign: TextAlign.left,
-              )),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(195.0, 663.0),
-            child: SizedBox(
-              width: 171.0,
-              height: 30.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                'Vencimento todo dia',
-                style: TextStyle(
-                  fontFamily: 'Century Gothic',
-                  fontSize: 13,
-                  color: const Color(0xff000000),
-                ),
-                textAlign: TextAlign.left,
-              )),
-            ),
-          ),
-          Transform.translate(
-            offset: Offset(252.0, 685.0),
-            child: SizedBox(
-              width: 26.0,
-              height: 30.0,
-              child: SingleChildScrollView(
-                  child: Text(
-                '10',
-                style: TextStyle(
-                  fontFamily: 'Century Gothic',
-                  fontSize: 13,
-                  color: const Color(0xff000000),
-                ),
-                textAlign: TextAlign.left,
-              )),
-            ),
-          ),
-          Transform.translate(
             offset: Offset(62.0, 767.0),
             child:
                 // Adobe XD layer: 'Icon feather-credit…' (group)
@@ -532,6 +463,51 @@ class XDInicio extends StatelessWidget {
               )),
             ),
           ),
+          Transform.translate(
+            offset: Offset(64.0, 646.88),
+            child:
+                // Adobe XD layer: 'Bullet' (group)
+                Stack(
+              children: <Widget>[
+                Transform.translate(
+                  offset: Offset(0.0, 0.12),
+                  child:
+                      // Adobe XD layer: 'Bullet' (shape)
+                      SvgPicture.string(
+                    _svg_vdjnj5,
+                    allowDrawingOutsideViewBox: true,
+                  ),
+                ),
+                Transform.translate(
+                  offset: Offset(25.0, 8.12),
+                  child:
+                      // Adobe XD layer: 'Hmm ... Tuesday nigh' (text)
+                      SizedBox(
+                    width: 211.0,
+                    height: 82.0,
+                    child: SingleChildScrollView(
+                        child: Text(
+                      'Olá joão, reparei que você quase atingiu o limite total, que tal algumas dicas sobre como poupar seu dinegeiro?',
+                      style: TextStyle(
+                        fontFamily: 'Fira Sans',
+                        fontSize: 14,
+                        color: const Color(0xffffffff),
+                        height: 1.2857142857142858,
+                      ),
+                      textAlign: TextAlign.left,
+                    )),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Transform.translate(
+            offset: Offset(27.0, 693.0),
+            child: SvgPicture.string(
+              _svg_xd5ysi,
+              allowDrawingOutsideViewBox: true,
+            ),
+          ),
         ],
       ),
     );
@@ -552,3 +528,7 @@ const String _svg_gmp31d =
     '<svg viewBox="68.5 461.5 218.0 1.0" ><path transform="translate(68.5, 461.5)" d="M 0 0 L 109 0" fill="none" stroke="#64c53b" stroke-width="4" stroke-miterlimit="4" stroke-linecap="butt" /><path transform="translate(177.5, 461.5)" d="M 0 0 L 109 0" fill="none" stroke="#a6b1a1" stroke-width="4" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
 const String _svg_9tn4e9 =
     '<svg viewBox="1.5 6.0 21.5 15.0" ><path  d="M 3.454545497894287 6.000000476837158 L 21.04545402526855 6.000000476837158 C 22.12491989135742 6.000000476837158 23 6.839466571807861 23 7.875000476837158 L 23 19.125 C 23 20.1605339050293 22.12491989135742 21 21.04545402526855 21 L 3.454545497894287 21 C 2.375079870223999 21 1.5 20.1605339050293 1.5 19.125 L 1.5 7.875000476837158 C 1.5 6.839466094970703 2.375080108642578 6 3.454545736312866 6.000000476837158 Z" fill="none" stroke="#878a85" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><path transform="translate(0.0, -3.37)" d="M 1.5 15 L 23 15" fill="none" stroke="#878a85" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /></svg>';
+const String _svg_vdjnj5 =
+    '<svg viewBox="0.0 0.1 251.0 91.0" ><path transform="translate(0.0, 0.12)" d="M 20.13479995727539 90.99990081787109 L 0 90.99990081787109 L 10.91340065002441 77.21131896972656 L 10.91340065002441 9 C 10.91340065002441 4.029300212860107 14.94270038604736 0 19.91340065002441 0 L 242.0001068115234 0 C 246.9708099365234 0 251.0001068115234 4.029300212860107 251.0001068115234 9 L 251.0001068115234 81.99990081787109 C 251.0001068115234 86.96970367431641 246.9708099365234 90.99990081787109 242.0001068115234 90.99990081787109 L 20.13479995727539 90.99990081787109 Z" fill="#5db1fd" stroke="none" stroke-width="1" stroke-miterlimit="10" stroke-linecap="butt" /></svg>';
+const String _svg_xd5ysi =
+    '<svg viewBox="27.0 693.0 54.0 57.0" ><path transform="translate(27.0, 693.0)" d="M 27 0 C 41.91168594360352 0 54 12.75988483428955 54 28.5 C 54 44.24011611938477 41.91168594360352 57 27 57 C 12.08831310272217 57 0 44.24011611938477 0 28.5 C 0 12.75988483428955 12.08831310272217 0 27 0 Z" fill="#5db1fd" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /><path transform="translate(40.5, 707.2)" d="M 23.15088272094727 17.60579490661621 C 23.15088272094727 18.81214904785156 22.22307395935059 19.79009437561035 21.07856178283691 19.79009437561035 L 8.64463996887207 19.79009437561035 L 4.500000476837158 24.15869140625 L 4.500000476837158 6.684298992156982 C 4.500000476837158 5.477943897247314 5.427809715270996 4.499999523162842 6.572320938110352 4.5 L 21.07856178283691 4.5 C 22.22307395935059 4.5 23.15088272094727 5.477944374084473 23.15088272094727 6.684298992156982 L 23.15088272094727 17.60579490661621 Z" fill="#ffffff" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /></svg>';
