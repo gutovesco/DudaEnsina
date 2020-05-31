@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:teste/Chat.dart';
+import 'package:teste/ChatBarCode.dart';
 import 'package:teste/FirstChallenge.dart';
 
 import 'InitialChat.dart';
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: FirstChallenge(),
+      home: ChatBarCode(),
     );
   }
 }
