@@ -1,6 +1,9 @@
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:teste/MundoBMG.dart';
+
+import 'InitialChat.dart';
+import 'MundoBMG.dart';
 
 class HomeScreen extends StatelessWidget {
   HomeScreen({
@@ -361,39 +364,47 @@ class HomeScreen extends StatelessWidget {
             offset: Offset(63.0, 635.88),
             child:
                 // Adobe XD layer: 'Bullet' (group)
-                Stack(
+                GestureDetector(
+                  onTap: (){
+                    Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => InitialChat()),
+                  );
+                  },
+                                  child: Stack(
               children: <Widget>[
-                Transform.translate(
-                  offset: Offset(0.0, 0.12),
-                  child:
-                      // Adobe XD layer: 'Bullet' (shape)
-                      SvgPicture.string(
-                    _svg_vdjnj5,
-                    allowDrawingOutsideViewBox: true,
+                  Transform.translate(
+                    offset: Offset(0.0, 0.12),
+                    child:
+                        // Adobe XD layer: 'Bullet' (shape)
+                        SvgPicture.string(
+                      _svg_vdjnj5,
+                      allowDrawingOutsideViewBox: true,
+                    ),
                   ),
-                ),
-                Transform.translate(
-                  offset: Offset(25.0, 8.12),
-                  child:
-                      // Adobe XD layer: 'Hmm ... Tuesday nigh' (text)
-                      SizedBox(
-                    width: 211.0,
-                    height: 82.0,
-                    child: SingleChildScrollView(
-                        child: Text(
-                      'Olá joão, reparei que você quase atingiu o limite total, que tal algumas dicas sobre como poupar seu dinheiro?',
-                      style: TextStyle(
-                        fontFamily: 'Fira Sans',
-                        fontSize: 14,
-                        color: const Color(0xffffffff),
-                        height: 1.2857142857142858,
-                      ),
-                      textAlign: TextAlign.left,
-                    )),
+                  Transform.translate(
+                    offset: Offset(25.0, 8.12),
+                    child:
+                        // Adobe XD layer: 'Hmm ... Tuesday nigh' (text)
+                        SizedBox(
+                      width: 211.0,
+                      height: 82.0,
+                      child: SingleChildScrollView(
+                          child: Text(
+                        'Olá joão, reparei que você quase atingiu o limite total, que tal algumas dicas sobre como poupar seu dinheiro?',
+                        style: TextStyle(
+                          fontFamily: 'Fira Sans',
+                          fontSize: 14,
+                          color: const Color(0xffffffff),
+                          height: 1.2857142857142858,
+                        ),
+                        textAlign: TextAlign.left,
+                      )),
+                    ),
                   ),
-                ),
               ],
             ),
+                ),
           ),
           Transform.translate(
             offset: Offset(17.54, 673.46),

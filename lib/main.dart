@@ -1,9 +1,7 @@
+
 import 'package:flutter/material.dart';
-import 'package:teste/Chat.dart';
-import 'package:teste/ChatBarCode.dart';
-import 'package:teste/FirstChallenge.dart';
-import 'package:teste/HomeScreen.dart';
 import 'ChatVideo.dart';
+import 'HomeScreen.dart';
 import 'InitialChat.dart';
 import 'MundoBMG.dart';
 
